@@ -1,0 +1,2411 @@
+         U AudioFadein
+         U AudioFadeout
+         U BtTwsPowerDownProcess
+         U CtxSave
+         U MPUConfigTable
+         U adc_data_count
+         U ble_scan_disable
+         U ble_scan_enable
+         U h4tl_Rx_done
+         U sbc_decoder_apply
+         U sbc_decoder_init
+         U sbc_encoder_aplly
+         U sbc_encoder_init
+         U sbc_encoder_initialize_advanced
+         U tws_audio_adjust
+         U tws_get_role
+         U tws_master_active_mode
+         U tws_master_ready_callback
+         U tws_role_match
+         U tws_slave_ready_callback
+         U tws_slave_switch_mode_enable
+         U tws_stop_callback
+00000000 a EILM_BEGIN
+00000000 a NDS_SAG_LMA_EILM
+00000000 W _ITB_BASE_
+00000000 W _RELAX_END_	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4085
+00000000 T _start	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4085
+00000000 t exception_vector	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4085
+000000a4 t exception_vector_end	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4128
+000000a4 T stub	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:367
+00000108 t flash_udelay	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4146
+00000184 t flash_delayms	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4177
+0000019e t FshcGpioSet	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4185
+000001c0 t FshcInit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4105
+000001da t FshcSendCmd	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4105
+0000020e t FshcSpiIOModeCfg	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/bt_boot.c:88
+000004f6 t SpiFlashResetCRM
+00000532 t SpiFlashResume
+00000566 t SpiFlashSuspend
+0000059a t SpiFlashReadId
+000006b4 t SpiFlashReadStatus
+0000075a t SpiFlashIsBusy
+00000776 t SpiFlashWriteStatus
+00000904 t SpiFlashIOModeCfg
+00000978 t SpiFlashDeepPowerDown
+000009a8 t SpiFlashReleaseFromDeepPowerDown
+000009c8 t SpiFlashWriteUnLock
+00000b20 t SpiFlashWriteLock
+00000c7c T IsFlashBusy
+00000c88 T SetFlashBusy
+00000c90 T ClearFlashBusy
+00000c9a t Flash_Memset
+00000caa T FshcClkSwitch
+00000d34 T SpiFlashResumDelaySet
+00000da8 T SpiFlashClkSwitch
+00000dbc t flash_exit_2bitcrm
+00000de6 T ByteRecombineToDword
+00000e02 T SpiFlashRead
+00000f46 T SpiFlashEraseResume
+00000fc4 T SpiFlashWrite
+0000127e T SpiFlashGetStatus
+000012b4 T SpiFlashFshcStatusSetIdle
+00001300 T SpiFlashErase
+00001426 T FlashErase
+00001506 T SpiFlashInit
+000015ec T SpiFlashInfoGet
+000015f4 T SpiFlashIOCtrl
+000016b0 r SpiFlash
+000017f4 T OS_Trap_Interrupt_SWI	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/os_cpu_a.S:94
+00001938 t ISR_TABLE	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:52
+000019b4 t OS_Trap_TLB_Fill	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:94
+000019c4 t OS_Trap_PTE_Not_Present	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:103
+000019d4 t OS_Trap_TLB_Misc	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:111
+000019e4 t OS_Trap_TLB_VLPT_Miss	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:120
+000019f4 t OS_Trap_Machine_Error	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:128
+00001a04 t OS_Trap_Debug_Related	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:136
+00001a14 t OS_Trap_General_Exception	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:144
+00001a24 t OS_Trap_Syscall	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:152
+00001a34 t OS_Trap_Int_Comm	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:159
+00001b1e t OS_Trap_Interrupt_HW0	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:169
+00001b28 t OS_Trap_Interrupt_HW1	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:185
+00001b32 t OS_Trap_Interrupt_HW2	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:190
+00001b3c t OS_Trap_Interrupt_HW3	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:195
+00001b46 t OS_Trap_Interrupt_HW4	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:200
+00001b50 t OS_Trap_Interrupt_HW5	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:211
+00001b76 t OS_Trap_Interrupt_HW6	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:216
+00001b80 t OS_Trap_Interrupt_HW7	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:221
+00001b8a t OS_Trap_Interrupt_HW8	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:226
+00001b94 t OS_Trap_Interrupt_HW9	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:231
+00001b9e t OS_Trap_Interrupt_HW10	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:236
+00001ba8 t OS_Trap_Interrupt_HW11	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:241
+00001bb2 t OS_Trap_Interrupt_HW12	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:246
+00001bbc t OS_Trap_Interrupt_HW13	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:251
+00001bc6 t OS_Trap_Interrupt_HW14	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:256
+00001bd0 t OS_Trap_Interrupt_HW15	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:261
+00001bda t OS_Trap_Interrupt_HW16	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:266
+00001be4 t OS_Trap_Interrupt_HW17	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:271
+00001bee t OS_Trap_Interrupt_HW18	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:285
+00001bf8 t OS_Trap_Interrupt_HW19	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:299
+00001c02 t OS_Trap_Interrupt_HW20	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:304
+00001c0c t OS_Trap_Interrupt_HW21	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:309
+00001c16 t OS_Trap_Interrupt_HW22	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:314
+00001c20 t OS_Trap_Interrupt_HW23	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:319
+00001c2a t OS_Trap_Interrupt_HW24	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:324
+00001c34 t OS_Trap_Interrupt_HW25	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:329
+00001c3e t OS_Trap_Interrupt_HW26	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:334
+00001c48 t OS_Trap_Interrupt_HW27	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:339
+00001c52 t OS_Trap_Interrupt_HW28	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:344
+00001c5c t OS_Trap_Interrupt_HW29	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:349
+00001c66 t OS_Trap_Interrupt_HW30	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:354
+00001c70 t OS_Trap_Interrupt_HW31	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:359
+00001c7c t ___start	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/crt0.S:379
+00001ccc T Clock_DeepSleepSysClkSelect
+00001dd0 T Clock_CoreClkDivSet
+00001de8 T Clock_CoreClkDivGet
+00001df2 T Clock_SysClkDivGet
+00001e10 T Clock_PllFreqGet
+00001e16 T Clock_APllFreqGet
+00001e1c T Clock_CoreClockFreqGet
+00001e88 T Clock_SysClockFreqGet
+00001ebe T Clock_SysClkDivSet
+00001f18 T GPIO_RegOneBitSet
+00001f28 T GPIO_RegOneBitClear
+00001f3c T DelayMs
+00001f8e T __udelay
+00001fe0 T Timer_InterruptFlagClear
+00002094 T SystickInterrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/portISR.c:100
+000020be T DMA0_Interrupt
+0000213e T DMA1_Interrupt
+000021d8 T DMA2_Interrupt
+00002272 T DMA3_Interrupt
+0000230c T DMA4_Interrupt
+000023a6 T DMA5_Interrupt
+00002440 T DMA6_Interrupt
+000024da T DMA7_Interrupt
+00002574 T GetSysTick1MsCnt
+0000257a T PastTimeGet
+0000258e T TimeOutSet
+000025ae T IsTimeOut
+00002664 W UART1_Interrupt
+000026ea t ld_acl_clk_isr
+000027d4 T MCUCircular_Config	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:20
+000027e0 T MCUCircular_GetSpaceLen	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:28
+000027f4 T MCUCircular_PutData	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:41
+00002836 T MCUCircular_GetDataLen	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:59
+00002856 T MCUCircular_GetData	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:85
+000028ae T MCUCircular_ReadData	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:124
+000028fc T MCUCircular_AbortData	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:163
+00002924 T MCUDCircular_Config	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:193
+00002932 T MCUDCircular_GetSpaceLen	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:202
+00002946 T MCUDCircular_PutData	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:215
+00002988 T MCUDCircular_Get1To2Len	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:233
+000029a8 T MCUDCircular_GetData1Len	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:258
+000029c8 T MCUDCircular_GetData1	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:284
+00002a2e T MCUDCircular_ReadData1	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:327
+00002a7c T MCUDCircular_GetData2Len	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:365
+00002a9c T MCUDCircular_GetData2	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mcu_circular_buf.c:391
+00002af6 T boot_vApplicationIdleHook	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:86
+00002af8 T boot_trace_TASK_SWITCHED_IN	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:91
+00002afa T boot_trace_TASK_SWITCHED_OUT	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:95
+00002afc T SendTask	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:180
+00002b0e T BtWriteFlashTask	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:201
+00002b20 t check_user_code	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:294
+00002bb4 T boot_ram_init
+00002bc6 T _printf_float	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:99
+00002bc8 T boot_api	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:106
+00002d3e T boot_prvInitialiseHeap	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:164
+00002d66 T RecvTask	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:189
+00002d82 T InitUpgradeInfo	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:331
+00002ea0 T UpgradeCheck	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:388
+00002fe8 T sys_main	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:463
+00003186 T enter_up_grade	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../upgrade.c:178
+0000321c t boot_CheckBtAddr	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_app_func.c:126
+0000326c T boot_prinfBtConfigParams	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_app_func.c:96
+00003300 T boot_LoadBtConfigurationParams	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_app_func.c:156
+00003496 T boot_ConfigBtBbParams	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_app_func.c:282
+00003506 T boot_ConfigBtStackParams	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_app_func.c:317
+00003558 T boot_BtStackInit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_app_func.c:382
+0000359e T DdbFindRecord	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_ddb_flash.c:180
+000035cc T DdbDeleteRecord	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_ddb_flash.c:197
+00003622 T BtDdb_Open	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_ddb_flash.c:271
+00003734 T BtDdb_AddOneRecord	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_ddb_flash.c:305
+00003a42 T BtDdb_Erase	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_ddb_flash.c:476
+00003a5a T BtDdb_LoadBtConfigurationParams	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_ddb_flash.c:497
+00003a80 T BtDdb_SaveBtConfigurationParams	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_ddb_flash.c:516
+00003acc T boot_BtStackCallback	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_manager.c:31
+00003c54 t osMalloc	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_platform_interface.c:52
+00003c58 t osFree	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_platform_interface.c:57
+00003c5a T CloseBtRecord	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_platform_interface.c:93
+00003c5e T FindBtRecordByIndex	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_platform_interface.c:150
+00003c62 T OpenBtRecord	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_platform_interface.c:77
+00003c6c T AddBtRecord	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_platform_interface.c:102
+00003c76 T FindBtRecord	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_platform_interface.c:131
+00003ca8 T DeleteBtRecord	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_platform_interface.c:112
+00003cc0 T boot_BtSppCallback	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_spp_app.c:32
+00003d1c T ios_updata_call_back	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_ios_upgrade.c:15
+00003d78 T boot_SendDeepSleepMsg	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:95
+00003d7a T boot_BBMatchReport	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:96
+00003d7c T boot_BtCancelConnect	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:97
+00003d7e T boot_BtCancelReconnect	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:98
+00003d80 T boot_TWS_SlaveL2capCallback	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:99
+00003d82 T boot_TWS_MasterL2capCallback	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:100
+00003d84 T boot_twsRunLoop	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:101
+00003d86 T boot_BtStackRunNotify	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:102
+00003d88 T boot_BBErrorReport	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:103
+00003d8a T boot_BtFreqOffsetAdjustComplete	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:104
+00003d8c T boot_tws_tx_end	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:105
+00003d8e T boot_tws_rx_end	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:106
+00003d90 T boot_load_tws_filter_infor	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:107
+00003d92 T boot_app_bt_page_state	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:108
+00003d96 T boot_get_cur_tws_addr	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:109
+00003d9a T boot_tws_inquiry_cmp_name	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:110
+00003d9e T boot_tws_filter_user_defined_infor_cmp	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:111
+00003da2 T boot_tws_connect_cmp	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:112
+00003da6 T boot_comfirm_connecting_condition	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:113
+00003daa T boot_tws_audio_init	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:114
+00003dae T boot_GetBtLinkState	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:115
+00003db2 T boot_Null_Function	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:116
+00003db4 T boot_AudioDAC0DataLenGet	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:117
+00003db8 T boot_is_tws_slave	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:118
+00003dbc T boot_update_btDdb	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:119
+00003dd0 T boo_bt_api_init	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:126
+00003e72 T bt_main	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:45
+00003ef0 T BOOT_OTG_DeviceGetDescriptor
+00003fc0 T BOOT_OTG_DeviceStandardRequest
+00004050 T BOOT_OTG_DeviceRequestProcess	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/device/otg_device_standard_request.c:212
+00004140 T OTG_HostGetDescriptor	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_standard_enum.c:286
+00004188 T OTG_HostSetAddress	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_standard_enum.c:309
+000041fc T OTG_HostSetConfiguration	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_standard_enum.c:340
+0000422c T OTG_HostEnumDevice
+000044a2 T OTG_HostInit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_standard_enum.c:512
+000044c8 T UDiskGetMaxLUN	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:78
+000044fc T UDiskDiscardPackets
+00004536 T UDiskBulkTransport	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:127
+00004608 T UDiskInquiry	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:271
+00004644 T UDiskReadFormatCapacity	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:289
+00004680 T UDiskReadCapacity	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:306
+000046b8 T UDiskRequestSense	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:326
+00004704 T UDiskTestUnitReady	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:351
+00004732 T UDiskReadBlock	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:373
+0000488c T UDiskWriteBlock	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:468
+000048de T UDiskInit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:503
+00004b86 T CardPortInit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:74
+00004c44 T SDCardDeinit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:117
+00004cca T SDCard_ControllerInit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:149
+00004cec T SDIO_CmdSend
+00004d62 t SDCard_SendAppCommand.constprop.4	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:205
+00004d96 T SDCard_Ocr_Get
+00004dce T SDCard_Detect
+00004e6e T SDCard_Identify
+000050f6 T SDCard_Init	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:462
+00005182 T SDCard_ReadBlock	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:511
+00005356 T SDCard_WriteBlock	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:618
+00005596 T SDCard_CapacityGet	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:747
+0000559c T SDCard_Force_Exit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:752
+000055d0 t GIE_SAVE.constprop.0	/cygdrive/I/B1X/new_8mb_code/20210901/boot/freertos/inc/n12_def.h:60
+000055e0 T xPortGetFreeHeapSize	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:748
+000055e6 T prvInsertBlockIntoFreeList	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:760
+00005624 T pvPortMalloc	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:180
+000056d2 T pvPortMallocFromEnd	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:322
+00005798 T vPortFree	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:484
+000057e4 T vPortDefineHeapRegions	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:821
+0000588a T GetIPSR	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:921
+0000589c T GetCurrentTaskHandle	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:934
+000058ae T DeleteTaskMallocMem	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:944
+000058e2 T vListInitialise	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/list.c:75
+000058f6 T vListInitialiseItem	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/list.c:95
+000058fc T vListInsertEnd	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/list.c:102
+00005914 T vListInsert	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/list.c:121
+00005942 T uxListRemove	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/list.c:179
+00005960 T CtxRestore	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/os_cpu_a.S:70
+000059de T vPortEndScheduler	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:242
+000059e8 T pxPortInitialiseStack	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:145
+00005aaa T xPortStartScheduler	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:227
+00005ab8 T vPortYield	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:254
+00005ac6 T vPortEnterCritical	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:266
+00005ae6 T vPortExitCritical	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:283
+00005b02 T ulPortSetInterruptMask	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:295
+00005b16 T vPortClearInterruptMask	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:316
+00005b20 W vPortISRStartFirstTask	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/portISR.c:80
+00005b28 t prvCopyDataToQueue	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:1594
+00005b9a t prvCopyDataFromQueue	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:1664
+00005bc0 t prvUnlockQueue	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:1686
+00005c30 t GIE_SAVE.constprop.0	/cygdrive/I/B1X/new_8mb_code/20210901/boot/freertos/inc/n12_def.h:60
+00005c40 T xQueueGenericReset	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:255
+00005ca2 T xQueueGenericCreate	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:308
+00005cea T xQueueGenericSend	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:593
+00005e00 T xQueueCreateMutex	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:376
+00005e54 T xQueueGenericSendFromISR	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:1025
+00005ede T xQueueGenericReceive	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:1169
+00006010 T vQueueUnregisterQueue	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:2185
+00006032 T vQueueDelete	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:1544
+00006052 t prvListTaskWithinSingleList
+000060c8 t prvResetNextTaskUnblockTime
+000060e4 t prvAddCurrentTaskToDelayedList
+0000611a t GIE_SAVE.constprop.5	/cygdrive/I/B1X/new_8mb_code/20210901/boot/freertos/inc/n12_def.h:60
+0000612a T traceTASK_SWITCHED_IN	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:88
+00006134 T traceTASK_SWITCHED_OUT	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:93
+0000613e T xTaskGenericCreate
+000062c4 T vTaskDelete	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:713
+00006336 T uxTaskPriorityGet	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:1023
+00006350 T vTaskPrioritySet	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:1045
+000063fe T vTaskStartScheduler	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:1464
+0000643e T vTaskSuspendAll	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:1553
+0000644a T pcTaskGetTaskName	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:1740
+00006460 T xTaskIncrementTick	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:1859
+0000654e T xTaskResumeAll	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:1591
+0000660a T vTaskDelay	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:887
+00006644 t prvIdleTask	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:2563
+000066a6 T uxTaskGetSystemState	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:1755
+0000671a T vTaskSwitchContext	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:2124
+000067b2 T vTaskPlaceOnEventList	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:2182
+000067de T xTaskRemoveFromEventList	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:2352
+00006846 T vTaskSetTimeOutState	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:2451
+0000685e T xTaskCheckForTimeOut	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:2459
+000068ac T vTaskMissedYield	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:2508
+000068b4 T xTaskGetCurrentTaskHandle	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:3137
+000068ba T xTaskGetSchedulerState	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:3154
+000068d2 T vTaskPriorityInherit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:3182
+00006944 T vTaskPriorityDisinherit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:3245
+0000698e T vTaskList	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:3349
+00006a26 T vTaskGetRunTimeStats	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:3436
+00006ace T TaskDeleteCompleted	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:3571
+00006ae4 T init_get_bits	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/bits.c:7
+00006b0e T get_bits	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/bits.c:14
+00006b50 T l1_unscale	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:119
+00006ba4 T l2_unscale_group	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:134
+00006be2 T dct32	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:217
+000074c4 T round_sample	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:369
+000074dc T synth_filter	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:434
+000077f6 T decode_header
+000078fa T l2_select_table	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:629
+00007946 T mp_decode_layer2	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:661
+00007d72 T mp_decode_frame	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:913
+00007dc4 T MP2_decode_frame
+00007e04 T MP2_decode_init	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:970
+00007e16 T MP2_Load_Code	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:978
+00007e4a W BLE_Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a t Default_Handler	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:53
+00007e4a W FFTInterrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W GpioInterrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W I2C_Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W I2sInterrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W IRInterrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W RtcInterrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W SDIO0_Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W SPIM_Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W SPIS_Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W SWInterrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W SpdifInterrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W Timer2Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W Timer3Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W Timer4Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W Timer5Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W Timer6Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W UART0_Interrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4a W WakeupInterrupt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:55
+00007e4c T ExceptionCommHandler	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:59
+0000801c T __c_init	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:192
+00008050 T __cpu_init	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:224
+000080fe T HardwareStackProtectEnable
+00008124 T __init	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/init-default.c:353
+00008140 T GIE_ENABLE	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/interrupt.c:9
+0000814a T GIE_DISABLE	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/interrupt.c:14
+00008158 T GIE_STATE_GET	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/interrupt.c:20
+00008160 T NVIC_EnableIRQ	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/interrupt.c:63
+00008178 T NVIC_DisableIRQ	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/interrupt.c:75
+00008192 T NVIC_SetPriority	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/interrupt.c:87
+000081da T nds_write	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/retarget.c:45
+000081f6 T log_init	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/retarget.c:54
+00008250 T boot_main	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/boot_main.c:28
+0000827a T bt_ota_upgrate	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/bt_boot.c:184
+00008360 T udisk_link	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/device_detect.c:58
+000083ae T pc_link	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/device_detect.c:90
+0000840a T sdcard_link	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/device_detect.c:127
+00008500 t ValidityCheck	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs_upgrade.c:159
+00008824 T flashboot_FlashErase	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs_upgrade.c:24
+0000890c T WriteData	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs_upgrade.c:80
+00008a68 T write_flash	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs_upgrade.c:336
+00008aa8 T host_upgrade	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs_upgrade.c:350
+000090bc t usb_send_data
+00009110 T usb_recive_4Kdata	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/pc_upgade.c:76
+00009142 T boot_pc_upgrade	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/pc_upgade.c:118
+000098fc T disk_status	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/diskio.c:28
+00009904 T disk_initialize	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/diskio.c:64
+0000990c T disk_read	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/diskio.c:92
+00009940 T disk_write	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/diskio.c:134
+00009974 T disk_ioctl	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/diskio.c:175
+00009980 T get_fattime	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/diskio.c:207
+00009986 t ld_dword	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:622
+0000999c t ld_qword	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:634
+00009a22 t st_dword
+00009a36 t st_qword	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:666
+00009a60 t mem_set	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:701
+00009a76 t tchar2uni	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:778
+00009b0c t sum_sfn	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2073
+00009b32 t xdir_sum	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2095
+00009b62 t get_ldnumber	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:3164
+00009ba0 t validate	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:3692
+00009bca t xname_sum	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2116
+00009c08 t get_achar	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2796
+00009c1a t pattern_match	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2827
+00009cbe t put_utf
+00009d8a t ld_clust.isra.3	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:618
+00009dae t st_clust.isra.4	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:653
+00009dce t init_alloc_info.isra.5	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2247
+00009df8 t sync_window.part.6	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1075
+00009e50 t get_fileinfo
+0000a0b2 t mem_cpy.part.8	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:687
+0000a0cc t sync_fs	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1128
+0000a180 T mem_cpy
+0000a18c T mem_cmp	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:712
+0000a1a4 t test_gpt_header
+0000a230 T move_window
+0000a27c t get_fat	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1181
+0000a404 t check_fs
+0000a4c8 t check_fs_ex
+0000a53c t change_bitmap	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1364
+0000a5c8 t put_fat
+0000a71c t fill_last_frag	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1423
+0000a748 t fill_first_frag.part.14	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1400
+0000a770 t remove_chain
+0000a870 t create_chain	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1544
+0000aa8e T clst2sect	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1164
+0000aab0 t mount_volume	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:3463
+0000b0a8 t dir_clear
+0000b10a t dir_next	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1764
+0000b1fa t load_xdir	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2196
+0000b2e8 t dir_read.constprop.19	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2372
+0000b436 T dir_sdi	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1716
+0000b502 t load_obj_xdir	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2265
+0000b534 t dir_find	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2450
+0000b6f8 t follow_path	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:3077
+0000bac8 t dir_alloc	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:1825
+0000bb28 t store_xdir	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2294
+0000bb98 t dir_register	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:2531
+0000bf04 T f_mount	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:3736
+0000bf48 T f_open	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:3784
+0000c220 T f_read	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:3978
+0000c3d8 T f_sync	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4201
+0000c544 T f_close	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4282
+0000c55c T f_chdrive	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4318
+0000c576 T f_lseek	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4497
+0000c7b2 T f_opendir	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4660
+0000c83c T f_closedir	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4726
+0000c84c T f_readdir
+0000c88c T f_findnext	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4792
+0000c8d2 T f_findfirst	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:4817
+0000c8ee T boot_get_audio_type	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ffpresearch.c:62
+0000c95a T boot_fs_api_init	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ffpresearch.c:88
+0000c964 T get_audio_type	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ffpresearch.c:103
+0000c96e T ff_uni2oem	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ffunicode.c:15222
+0000c9ae T ff_oem2uni	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ffunicode.c:15244
+0000c9cc T ff_wtoupper	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ffunicode.c:15464
+0000ca64 T Chip_Version
+0000ca6e T Chip_VMIDDetectDisable
+0000ca80 T Chip_Init
+0000cb20 T Chip_RandomSeedGet
+0000cb60 T Clock_Config
+0000cbe2 T WaitOscillateWork
+0000cbfc T Clock_USBClkDivSet
+0000cc0e T Clock_RcFreqGet
+0000ccb4 T Clock_RcFreqAutoCntStart
+0000ccd8 T Clock_RcFreqAutoCntGet
+0000cd10 T Clock_PllLock
+0000ce06 T Clock_APllLock
+0000cefc T Clock_SysClkSelect
+0000cf8a T Clock_USBClkSelect
+0000cfb6 T Clock_UARTClkSelect
+0000d00e T Clock_Timer3ClkSelect
+0000d038 T Clock_Module1Enable
+0000d048 T Clock_Module2Enable
+0000d058 T Clock_Module3Enable
+0000d068 T EnableMPU_EmSize
+0000d0fc T DisableMPU
+0000d10e T EnableIDCache_EmSize
+0000d150 T DisableIDCache
+0000d192 T DataCacheInvalidAll
+0000d19c T ICacheInvalidAll
+0000d1c4 T DataCacheRangeInvalid
+0000d22a T DMA_ChannelAllocTableSet
+0000d23c T DMA_ChannelEnable
+0000d268 T DMA_ChannelDisable
+0000d296 T DMA_InterruptFlagGet
+0000d2ea T DMA_InterruptFlagClear
+0000d390 T DMA_BlockConfig
+0000d52e T DMA_BlockBufSet
+0000d610 T Efuse_ReadData
+0000d676 T GPIO_RegGet
+0000d680 T GPIO_PortAModeSet
+0000e30a T OTG_PortGetDP
+0000e318 T OTG_PortGetDM
+0000e326 T OTG_PortEnableDPPullUp
+0000e34c T OTG_PortDisableDPPullUp
+0000e372 T OTG_PortEnablePullDown
+0000e398 T OTG_PortDisablePullDown
+0000e3be T OTG_PortEnablePullUp500K
+0000e3e4 T OTG_PortDisablePullUp500K
+0000e40a T OTG_PortSetSpeed
+0000e430 T OTG_PortHostIsLink
+0000e440 t OTG_DeviceWaitEnd
+0000e4b6 T OTG_DeviceStallSend
+0000e514 T OTG_DeviceEndpointReset
+0000e5c8 T OTG_DeviceAddressSet
+0000e60e T OTG_DeviceInit
+0000e690 T OTG_DeviceBusEventGet
+0000e69a T OTG_DeviceControlSend
+0000e6f4 T OTG_DeviceControlReceive
+0000e76c T OTG_DeviceSetupReceive
+0000e7c2 T LoadFIFOData
+0000e7de T UnloadFIFOData
+0000e7fa t OTG_HostPortReset
+0000e836 t OTG_HostOpen
+0000e8d4 T OTG_HostAddressSet
+0000e8de T OTG_HostControlInit
+0000e926 T OTG_HostHaltClear
+0000e9c8 t OTG_HostWaitTransferEnd
+0000eb8c t OTG_HostSetupPacket
+0000ec64 T OTG_HostControlWrite
+0000ed10 T OTG_HostControlRead
+0000edcc T OTG_HostBulkRead
+0000eece T OTG_HostBulkWrite
+0000ef68 T Remap_AddrRemapSet
+0000f002 T Remap_AddrRemapDisable
+0000f042 T Remap_InitTcm
+0000f072 T Reset_McuSystem
+0000f07c T ROM_UserRegisterSet
+0000f086 T ROM_UserRegisterGet
+0000f092 T ROM_BankBUpgradeApply
+0000f0fa T ROM_CRC16
+0000f112 T ROM_SysReset
+0000f12a T SDIO_ByteModeEnable
+0000f13c T SDIO_SysToSdioDivSet
+0000f15e T SDIO_ClkSet
+0000f178 T SDIO_ClkEnable
+0000f1a2 T SDIO_ClkDisable
+0000f1cc T SDIO_Init
+0000f208 T SDIO_CmdStart
+0000f2ca T SDIO_CmdIsDone
+0000f2d6 T SDIO_CmdStop
+0000f2e8 T SDIO_CmdRespGet
+0000f382 T SDIO_CmdDoneCheckBusy
+0000f39c T SDIO_ClearClkHalt
+0000f3ba T SDIO_SingleBlockConfig
+0000f42a T SDIO_MultiBlockConfig
+0000f4a2 T SDIO_DataTransfer
+0000f4be T SDIO_DataIsDone
+0000f4cc T SDIO_MultiBlockTransferDone
+0000f4da T SDIO_IsDataLineBusy
+0000f4ec T SysTickInit
+0000f516 T SysTickDeInit
+0000f52a T SysTimerIntFlagClear
+0000f538 T ClockFreqGet
+0000f564 T Timer_Config
+0000f718 T Timer_Start
+0000f790 t UART_BaudClkGet
+0000f7e6 T UART0_Init
+0000f9a6 T UART1_Init
+0000fb66 T UART0_SendByte
+0000fba6 T UART1_SendByte
+0000fbe6 T GetLibVersionDriver
+0000fbec T WDG_Enable
+0000fc24 T WDG_Disable
+0000fc48 T WDG_Feed
+0000fc54 T platform_reset
+0000fc8e T Bt_init
+0000fe14 T rw_main
+0000fe44 T sniff_clk_get
+0000fe4a T intc_init
+0000fe5c T lc_init
+0000fe9c T lc_link_number
+0000feb6 T lc_afh_set
+0000ff22 T lc_chg_pkt_type_cmp
+0000ff42 T lc_chg_pkt_type_cont
+0000ff76 T lc_afh_start
+0000ffcc T lc_chk_to
+0001001c T lc_con_cmp_evt_send
+00010048 T lc_con_cmp
+000100d2 T lc_max_slot_mgt
+0001014a T lc_mst_qos_done
+00010168 T lc_ptt_cmp
+000101b2 T lc_ptt
+00010254 T lc_restore_afh_reporting
+00010296 T lc_rem_name_cont
+000102dc T lc_sec_auth_compute_sres
+0001035a T lc_release
+00010370 T lc_restore_to
+000103a0 T lc_enter_sniff_mode
+0001041a T lc_start_lmp_to
+00010452 T lc_start
+000106ee T lc_comb_key_svr
+000107ae T lc_locepr_rsw
+000107f0 T lc_locepr_lkref
+00010838 T lc_enc_key_refresh
+000108ea T lc_initiator_epr
+00010928 T lc_init_calc_f3
+00010980 T lc_init_start_mutual_auth
+000109b6 T lc_mst_send_mst_key
+00010a82 T lc_init_passkey_loop
+00010ae0 T lc_local_untrans_mode
+00010b2c T lc_pairing_cont
+00010c34 T lc_legacy_pair
+00010c72 T lc_passkey_comm
+00010cf4 T lc_qos_setup
+00010d58 T lc_rd_rem_name
+00010d94 T lc_resp_oob_wait_nonce
+00010da8 T lc_start_enc
+00010e7e T lc_epr_rsw_cmp
+00010ed4 T lc_start_enc_key_size
+00010f28 T lc_start_key_exch
+00010f78 T lc_stop_enc
+00010fc8 T lc_epr_resp
+00011030 T lc_rem_enc
+0001109c T lc_stop_afh_report
+000110ce T lc_local_switch
+0001114a T lc_skip_hl_oob_req
+0001118e T lc_start_oob
+000111c6 T lc_send_enc_mode
+00011218 T lc_restart_enc
+00011250 T lc_restart_enc_cont
+000112b4 T lc_detach
+0001133c T lc_chg_pkt_type_retry
+00011438 T lc_semi_key_cmp
+000114b0 T lc_mst_key
+00011584 T lc_sniff_sub_mode
+00011604 T lc_upd_to
+00011666 T lc_ret_sniff_max_slot_chg
+000116d0 T lc_sniff_max_slot_chg
+00011740 T lc_local_trans_mode
+00011798 T lc_unit_key_svr
+000117e8 T lc_feat
+0001182c T lc_hl_connect
+0001185e T lc_version
+00011884 T lc_loc_sniff
+000118d0 T lc_rem_sniff_sub_rate
+000119b2 T lc_unsniff
+000119e4 T lc_ext_feat
+00011a26 T lc_packet_type
+00011a98 T lc_sniff_slot_unchange
+00011b66 T lc_end_of_sniff_nego
+00011bcc T lc_rem_trans_mode
+00011c18 T lc_rem_nego_trans_mode
+00011c94 T lc_rem_sniff
+00011d54 T lc_unsniff_cont
+00011d88 T lc_rem_untrans_mode
+00011dea T lc_unsniff_cmp
+00011e30 T lc_rem_unsniff
+00011e76 T lc_ssr_nego
+00011f12 T lc_conn_seq_done
+00011f28 T lc_rsw_clean_up
+00011fcc T lc_rsw_done
+000120a6 T lc_switch_cmp
+000120bc T lc_rem_switch
+0001213c T lc_send_enc_chg_evt
+00012164 T lc_auth_cmp
+00012202 T lc_end_chk_colli
+0001224a T lc_enc_cmp
+000122ec T lc_mutual_auth_end2
+000123d4 T lc_epr_change_lk
+000123f8 T lc_epr_cmp
+0001246c T lc_mutual_auth_end
+00012510 T lc_key_exch_end
+0001254e T lc_sp_end
+00012584 T lc_calc_link_key
+0001260e T lc_sp_fail
+0001263e T lc_dhkey
+00012680 T lc_resp_calc_f3
+0001273c T lc_resp_wait_dhkey_cont
+00012764 T lc_start_passkey_loop
+000127be T lc_start_passkey
+0001282e T lc_sp_oob_tid_fail
+00012854 T lc_resp_oob_nonce
+000128b6 T lc_resp_pair
+00012938 T lc_pair
+00012a22 T lc_resp_auth
+00012ae2 T lc_loc_auth
+00012b84 T lc_save_previous_state
+00012b9c T lc_restore_previous_state
+00012bb4 T lc_clear_previous_state
+00012bc6 T lc_send_lmp
+00012bfc T lc_send_pdu_acc
+00012c14 T lc_send_pdu_acc_ext4
+00012c38 T lc_send_pdu_not_acc
+00012c54 T lc_send_pdu_not_acc_ext4
+00012c7c T lc_send_pdu_set_afh
+00012cb8 T lc_send_pdu_au_rand
+00012cd8 T lc_send_pdu_in_rand
+00012cf8 T lc_send_pdu_comb_key
+00012d18 T lc_send_pdu_max_slot
+00012d30 T lc_send_pdu_max_slot_req
+00012d48 T lc_send_pdu_encaps_payl
+00012d68 T lc_send_pdu_encaps_head
+00012d88 T lc_send_pdu_ptt_req
+00012da4 T lc_send_pdu_sp_nb
+00012dc6 T lc_send_pdu_sp_cfm
+00012de6 T lc_send_pdu_sres
+00012e06 T lc_send_pdu_sco_lk_rem_req
+00012e22 T lc_send_pdu_esco_lk_rem_req
+00012e42 T lc_send_pdu_auto_rate
+00012e56 T lc_send_pdu_sniff_req
+00012eaa T lc_send_pdu_lsto
+00012ec2 T lc_send_pdu_enc_key_sz_req
+00012eda T lc_send_pdu_feats_res
+00012f00 T lc_send_pdu_tim_acc
+00012f14 T lc_send_pdu_feats_ext_req
+00012f46 T lc_send_pdu_io_cap_res
+00012f82 T lc_send_pdu_num_comp_fail
+00012f9a T lc_send_pdu_paus_enc_req
+00012fb2 T lc_send_pdu_resu_enc_req
+00012fca T lc_send_pdu_setup_cmp
+00012fde T lc_send_pdu_qos_req
+00012ffa T lc_send_pdu_slot_off
+00013038 T lc_send_pdu_unsniff_req
+0001304c T lc_send_pdu_vers_req
+00013082 T lc_send_pdu_dhkey_chk
+000130a4 t lc_sco_send_peer_disc
+000130ec t lc_sco_ind
+00013118 t lc_sco_send_host_disc_evt
+0001313a t lc_sco_send_host_cmp_evt
+00013184 t lc_sco_free_nego
+000131aa t lc_sco_alloc_link
+000131ce t lc_sco_alloc_nego
+000131fc t lc_sco_wrapper_lm_add_sync
+0001327e t lc_sco_send_peer_req
+00013394 t lc_sco_send_peer_accept
+000133c4 t lc_sco_start_link
+00013516 t lc_sco_send_peer_reject
+00013534 t lc_sco_modify_link
+00013608 t lc_sco_free_link.isra.3
+00013626 t lc_sco_wrapper_lm_modif_sync.isra.4
+00013674 t lc_sco_wrapper_lm_get_sync_param.isra.5
+000136de T lc_sco_init
+000136f4 T lc_sco_detach
+00013742 T lc_sco_release
+00013792 T lc_sco_host_request
+0001389e T lc_sco_host_accept
+000139bc T lc_sco_host_reject
+00013a1c T lc_sco_host_request_disc
+00013a6a T lc_sco_peer_request
+00013cca T lc_sco_peer_accept
+00013d28 T lc_sco_peer_reject
+00013d90 T lc_sco_peer_request_disc
+00013e30 T lc_sco_peer_accept_disc
+00013e80 T lc_sco_peer_reject_disc
+00013ec2 T lc_sco_baseband_ack
+00013f30 T lc_sco_timeout
+00013fb0 T lc_sniff_init
+00013fce T LM_AddSniff
+000142b0 T LM_RemoveSniff
+000142d6 T LM_SniffSubratingPeerReq
+00014330 T LM_GetSniffSubratingParam
+000143e6 T LM_SniffSubrateNegoRequired
+00014448 T LM_ComputeSniffSubRate
+00014456 T LM_RemoveSniffSubrating
+00014472 T LM_GetLinkTimeout
+0001449a t lm_get_auth_method
+000144d2 t lmp_ch_class_req_handler
+000144d6 t lc_lmp_rx_handler
+00014536 t lc_lmp_rsp_to_flow_spec_handler
+00014550 t lmp_auto_rate_handler
+00014584 t lmp_min_pwr_handler
+000145b8 t lmp_max_pwr_handler
+000145ec t lmp_sync_tws_handler
+000145f8 t lmp_pwr_ctrl_res_handler
+00014666 t lc_ssr_inst_ind_handler
+0001467e t lmp_setup_cmp_handler
+000146c6 t lmp_supv_to_handler
+00014768 t lc_op_epr_ind_handler
+000147c0 t lmp_page_scan_mode_req_handler
+00014806 t lmp_page_mode_req_handler
+00014844 t lm_sp_32bits_to_array
+00014866 t lmp_encaps_hdr_handler
+00014962 t lc_auth_payl_nearly_to_handler
+000149aa t lmp_enc_key_size_mask_req_handler
+00014a0c t lmp_decr_pwr_req_handler
+00014a62 t lmp_incr_pwr_req_handler
+00014ab8 t lmp_pwr_ctrl_req_handler
+00014b62 t lc_op_clkoff_ind_handler
+00014bb6 t lc_pwr_max_ind_handler
+00014c4c t lc_pwr_decr_ind_handler
+00014cf8 t lc_pwr_incr_ind_handler
+00014da4 t lc_auth_stg1_randn_handler
+00014e14 t lc_auth_payl_real_to_handler
+00014e64 t lc_afh_update_ind_handler
+00014ea0 t lc_afh_report_to_handler
+00015044 t lc_lmp_rsp_to_ind_handler
+00015334 t lc_dhkey_computation_end
+00015348 t lc_ecc_result_ind_handler
+0001539e t lc_sync_ind_handler
+0001544c t lmp_dhkey_chk_handler
+00015578 t lmp_sp_nb_handler
+00015854 t lmp_sp_cfm_handler
+00015944 t lmp_io_cap_res_handler
+000159be t lmp_set_afh_handler
+00015a52 t lmp_enc_key_size_mask_res_handler
+00015a88 t lmp_ver_res_handler
+00015b08 t lmp_slot_off_handler
+00015b46 t lmp_host_con_req_handler
+00015baa t lmp_use_semi_perm_key_handler
+00015c08 t lc_mst_key_req_handler
+00015c88 t lmp_timing_accu_res_handler
+00015d20 t lmp_timing_accu_req_handler
+00015d92 t lmp_max_slot_req_handler
+00015e10 t lmp_max_slot_handler
+00015e64 t lmp_esco_link_req_handler
+00015f34 t lmp_qos_req_handler
+00015fca t lmp_qos_handler
+00016038 t lc_rsw_end_ind_handler
+000160d0 t lmp_feats_res_handler
+00016142 t lmp_feats_req_handler
+000161ba t lmp_ver_req_handler
+00016236 t lmp_pref_rate_handler
+000162d6 t lmp_unsniff_req_handler
+0001636c t lmp_sniff_req_handler
+000164b4 t lmp_enc_key_size_req_handler
+0001656e t lmp_enc_mode_req_handler
+000166d4 t lmp_tempkey_handler
+00016738 t lmp_temprand_handler
+000167da t lmp_sres_handler
+00016a9c t lmp_aurand_handler
+00016c88 t lmp_unitkey_handler
+00016d3e t lmp_combkey_handler
+00016e58 t lmp_inrand_handler
+00016f6c t lmp_detach_handler
+00017022 t lmp_clk_off_req_handler
+0001708a t lmp_not_accepted_ext_handler
+0001725c t lmp_not_accepted_handler
+000177fc t lmp_name_res_handler
+000178a8 t lmp_name_req_handler
+00017904 t lmp_sync_freq_dev_handler
+000179e4 t lmp_keypress_notif_handler
+00017a28 t lmp_io_cap_req_handler
+00017b8e t lmp_ssr_res_handler
+00017be4 t lmp_ssr_req_handler
+00017c7a t lmp_ch_class_handler
+00017cca t lmp_pkt_type_tbl_req_handler
+00017d40 t lmp_feats_res_ext_handler
+00017dc6 t lmp_feats_req_ext_handler
+00017e3c t lc_op_loc_unsniff_req_handler
+00017e9c t lc_op_detach_ind_handler
+00017efc t lc_op_loc_sync_con_req_handler
+00017f5c t lc_op_loc_sniff_req_handler
+00017fdc t lc_op_pt_ind_handler
+0001802e t lc_enc_restart_req_handler
+0001807a t lc_sync_tx_cfm_handler
+0001809e t lc_rsw_slot_offset_ind_handler
+000180d0 t lc_acl_disc_ind_handler
+000181d4 t lc_acl_tx_cfm_handler
+00018214 t lc_acl_rx_ind_handler
+000183ea t lc_lmp_tx_cfm_handler
+000185e6 t lc_lmp_rx_ind_handler
+00018708 t LM_CheckTransactionID.isra.0
+00018726 t lmp_stop_enc_req_handler
+00018810 t lmp_start_enc_req_handler
+0001897c t lmp_clk_off_res_handler
+000189b8 t lc_op_name_req_ind_handler
+000189f2 t lc_con_accept_to_handler
+00018a38 t lmp_oob_fail_handler
+00018a7a t lmp_passkey_fail_handler
+00018ac2 t lmp_num_comparison_fail_handler
+00018b0c t lmp_resume_enc_req_handler
+00018b82 t lc_compute_dhkey_handler
+00018bd6 t lmp_pause_enc_aes_req_handler
+00018c74 t lmp_pause_enc_req_handler
+00018d34 t lc_dhkey_computation_start
+00018d60 t lmp_rmv_sco_link_req_handler
+00018da2 t lmp_rmv_esco_link_req_handler
+00018de4 t lmp_sco_link_req_handler
+00018e82 t lc_op_remauth_ind_handler
+00018ecc t lmp_accepted_ext_handler
+00018fa6 t lc_op_loc_switch_req_handler
+0001906a t lc_op_ssrnego_ind_handler
+0001909c t lc_op_enc_ind_handler
+000190d6 t lc_op_auth_ind_handler
+00019122 t lc_op_hl_cnx_cont_ind_handler
+0001919c t lc_op_hl_cnx_ind_handler
+000191f8 t lc_op_timacc_ind_handler
+00019254 t lc_op_vers_ind_handler
+00019292 t lc_op_feat_ind_handler
+000192d0 t lc_sync_rx_ind_handler
+00019342 t hci_bt_sync_data_tx_handler
+0001937c t hci_bt_acl_data_tx_handler
+000193f4 t lc_set_encap_pdu_data_p192
+00019488 t lmp_encaps_payl_handler
+000195f0 t lc_get_encap_pdu_data_192
+0001966c t lmp_accepted_handler
+00019d88 T BB_accept_con_req
+00019e84 T BB_rd_rem_ext_feats
+00019f18 T BB_Read_Remote_Feature
+00019f4a T BB_role_discovery
+00019f76 T BB_wr_link_pol_stg
+00019fb2 T BB_auth_req
+0001a008 T BB_chg_con_pkt_type
+0001a0d2 T is_tws_device
+0001a108 T get_tws_device_number
+0001a12e T bd_addr_check
+0001a166 t lmp_switch_req_handler
+0001a2f0 t lc_op_set_cmp_ind_handler
+0001a3da T BB_disconnect
+0001a484 T BB_create_con_cancel
+0001a4ca T BB_rem_name_req
+0001a53c T BB_set_con_enc
+0001a5ba T BB_sniff_mode
+0001a674 T BB_exit_sniff_mode
+0001a6bc T BB_refresh_enc_key
+0001a73a T BB_reject_con_req
+0001a7aa T BB_setup_sync_con
+0001a9cc T BB_accept_sync_con_req
+0001ab10 T BB_reject_sync_con_req
+0001ab56 T BB_switch_role
+0001abec T BB_io_cap_req_neg_reply
+0001ac4c T sync_freq_dev_cap_value
+0001ac88 T lc_util_get_max_packet_size
+0001ace4 T lc_util_set_loc_trans_coll
+0001acfa T lc_util_get_offset_clkn
+0001ad0c T lc_util_get_offset_clke
+0001ad1e T LM_ComputePacketType
+0001ad38 T LM_UpdateAclPacketType
+0001ad7a T LM_UpdateAclEdrPacketType
+0001adf0 T LM_SuppressAclPacket
+0001ae16 T LM_MaxSlot
+0001ae50 T LM_GetQoSParam
+0001af44 T LM_GetSwitchInstant
+0001af78 T LM_MakeCof
+0001af92 T LM_GetAFHSwitchInstant
+0001aff8 T LM_CheckSwitchInstant
+0001b040 T LM_CheckEdrFeatureRequest
+0001b050 T LM_GetFeature
+0001b06e T lm_look_for_stored_link_key
+0001b0be T lc_util_convert_pref_rate_to_packet_type
+0001b12e T lc_util_convert_maxslot_to_packet_type
+0001b148 T lm_get_common_pkt_types
+0001b1b2 t lm_convert_flag_to_type
+0001b1f8 t lm_sync_get_best_win_cont
+0001b242 t lm_get_sync_frame_size
+0001b27e t lm_compute_nb_bytes
+0001b29c t lm_extract_tesco_bitmask
+0001b3da t lm_check_packet_len
+0001b440 t lm_get_total_pkt_type
+0001b46e t lm_check_esco_bandwidth
+0001b508 t lm_sync_get_best_win
+0001b538 t lm_sync_check_pktAllowed
+0001b5cc t lm_get_sync_offset.isra.4
+0001b748 t lm_get_sco_param_hl_req
+0001b7b2 t lm_get_esco_params
+0001bb10 t lm_sync_check_pkt
+0001bbb0 t lm_sync_check_params.isra.7
+0001bc38 T lm_get_sync_param
+0001c9f0 T lm_init_sync
+0001ca08 T lm_check_active_sync
+0001ca14 T lm_add_sync
+0001cb78 T lm_modif_sync
+0001cc4a T lm_check_sync_hl_rsp
+0001cd02 T lm_look_for_sync
+0001cd26 T lm_get_nb_sync_link
+0001cd2c T lm_get_min_sync_intv
+0001cd46 T lm_remove_sync
+0001cd90 T lm_sco_nego_end
+0001cd98 T ld_channel_assess
+0001cdca T ld_init
+0001cf52 T ld_read_clock
+0001cf70 T ld_bd_addr_get
+0001cf8a T ld_class_of_dev_set
+0001cf9c T ld_timing_accuracy_get
+0001cfae T ld_active_check
+0001cfc4 T ld_afh_ch_assess_data_get
+0001cfca t ld_acl_rx_no_sync
+0001d06a t ld_sco_evt_stop_cbk
+0001d090 t ld_sco_sched
+0001d144 t ld_acl_rsw_evt_start_cbk
+0001d1a2 t ld_sco_resched_cbk
+0001d218 t ld_acl_afh_switch_off_cbk
+0001d22e t ld_acl_rx_sync2
+0001d300 t ld_acl_rsw_end
+0001d4b2 t ld_acl_sniff_enter
+0001d570 t ld_acl_sniff_evt_start_cbk
+0001d72c t ld_acl_rx_sync
+0001d88c t ld_acl_sniff_exit
+0001d912 t ld_acl_rx
+0001dd68 t ld_acl_tx_prog
+0001dff0 t ld_acl_tx
+0001e3ac t ld_acl_evt_start_cbk
+0001e50a t ld_acl_afh_apply
+0001e5b8 t ld_sco_evt_start_cbk
+0001e704 t ld_sco_end
+0001e78e t ld_sco_modify
+0001e906 t ld_sco_evt_canceled_cbk
+0001e976 t ld_acl_end.isra.3
+0001ea4c t ld_acl_sched
+0001eb50 t ld_acl_rsw_start
+0001edc6 t ld_acl_sniff_sched
+0001f032 t ld_acl_sniff_evt_canceled_cbk
+0001f054 t ld_acl_sniff_trans_sched
+0001f13e t ld_acl_rsw_evt_canceled_cbk
+0001f176 t ld_acl_rsw_frm_cbk
+0001f57c t ld_acl_resched
+0001f5d8 t ld_acl_evt_stop_cbk
+0001f60a t ld_acl_rx_isr.isra.9
+0001f634 t ld_acl_frm_cbk
+0001f838 t ld_acl_sniff_frm_cbk
+0001f920 t ld_acl_evt_canceled_cbk
+0001f9ec t ld_acl_afh_switch_on_cbk
+0001fa9c t ld_sco_frm_cbk
+0001fc54 T ld_acl_init
+0001fc6a T ld_acl_start
+0001fedc T ld_acl_stop
+0001ff40 T ld_acl_flow_off
+0001ff58 T ld_acl_flow_on
+0001ff7e T ld_acl_data_tx
+00020076 T ld_acl_lmp_tx
+000201ac T ld_acl_lmp_flush
+0002025c T ld_acl_rsw_req
+00020308 T ld_acl_t_poll_get
+0002032a T ld_acl_t_poll_set
+00020348 T ld_acl_sniff_trans
+0002040a T ld_acl_sniff
+00020466 T ld_acl_unsniff
+000204d8 T ld_acl_ssr_set
+00020528 T ld_acl_tx_enc
+00020530 T ld_acl_rx_enc
+00020538 T ld_acl_bcst_rx_dec
+00020540 T ld_acl_enc_key_load
+000205b4 T ld_acl_clock_offset_get
+000205e0 T ld_acl_slot_offset_get
+00020638 T ld_acl_slot_offset_set
+00020666 T ld_acl_lsto_get
+00020688 T ld_acl_lsto_set
+000206a6 T ld_acl_timing_accuracy_set
+000206ca T ld_acl_edr_set
+000206f0 T ld_acl_allowed_tx_packet_types_set
+000207ba T ld_acl_afh_set
+0002086a T ld_acl_afh_prepare
+000208e2 T ld_acl_afh_confirm
+00020922 T ld_acl_rx_max_slot_get
+00020944 T ld_acl_rx_max_slot_set
+00020974 T ld_sco_start
+00020d7e T ld_sco_update
+00020f16 T ld_sco_stop
+00020f60 T ld_sco_audio_isr
+0002109a T ld_sco_data_tx
+000210d4 T ld_bcst_acl_init
+000210dc T ld_bcst_tx_enc
+000210f2 T ld_bcst_enc_key_load
+00021114 T ld_fm_init
+00021142 T ld_fm_clk_isr
+0002118e T ld_fm_rx_isr
+000211ac T ld_fm_frame_isr
+000211f0 T ld_fm_sket_isr
+0002124c T ld_fm_prog_enable
+00021268 T ld_fm_prog_disable
+00021282 T ld_fm_prog_push
+00021320 T ld_fm_prog_check
+0002132c t ld_inq_evt_start_cbk
+000213d4 t ld_inq_end
+000213fc t ld_inq_sched
+000214a2 t ld_inq_evt_canceled_cbk
+000214c0 t ld_inq_frm_cbk
+00021680 T ld_inq_init
+00021688 T ld_inq_start
+00021856 T ld_inq_stop
+0002189c t ld_iscan_evt_canceled_cbk
+000218ca t ld_iscan_evt_start_cbk
+00021920 t ld_iscan_frm_cbk
+00021abe T ld_iscan_init
+00021ae8 T ld_iscan_restart
+00021b20 T ld_iscan_start
+00021d92 T ld_iscan_stop
+00021de2 T ld_iscan_eir_set
+00021eea t ld_page_evt_start_cbk
+00021fc6 t ld_page_end
+00022000 t ld_page_em_init
+000221c0 t ld_page_evt_canceled_cbk
+0002225c t ld_page_frm_cbk
+0002252a T ld_page_init
+00022532 T ld_page_start
+00022662 t ld_pscan_resched
+00022744 t ld_pscan_evt_handler
+0002288a t ld_pscan_evt_start_cbk
+0002292a t ld_pscan_em_init
+00022a4c t ld_pscan_evt_canceled_cbk
+00022ae6 t ld_pscan_frm_cbk
+00022dc8 T ld_pscan_init
+00022ddc T ld_pscan_restart
+00022e14 T ld_pscan_start
+00022f0a T ld_pscan_stop
+00022f76 T ld_sched_compute
+00023020 T ld_sched_init
+00023046 T ld_sched_iscan_add
+0002305a T ld_sched_iscan_remove
+0002306e T ld_sched_pscan_add
+00023082 T ld_sched_pscan_remove
+00023096 T ld_sched_inq_add
+000230ae T ld_sched_inq_remove
+000230d0 T ld_sched_page_add
+000230e8 T ld_sched_page_remove
+0002310a T ld_sched_acl_add
+00023120 T ld_sched_acl_remove
+00023136 T ld_sched_sniff_add
+0002315a T ld_sched_sniff_remove
+0002317a T ld_sched_sco_add
+0002319e T ld_sched_sco_remove
+000231be T ld_util_fhs_unpk
+000232a6 T ld_util_bch_create
+0002348e T ld_util_fhs_pk
+0002354c t ke_event_p192_pub_key_gen_handler
+0002358c T set_deviceLocalName
+00023596 T lm_init
+0002376e T lm_lt_addr_alloc
+00023796 T lm_lt_addr_free
+000237b0 T lm_get_nb_acl
+000237f0 T lm_role_switch_start
+0002382c T lm_role_switch_finished
+000238aa T lm_read_features
+000238fc T lm_acl_disc
+00023962 T lm_get_auth_en
+0002396e T lm_get_sp_en
+0002397a T LM_GetPINType
+00023980 T LM_GetConnectionAcceptTimeout
+00023986 T LM_GetLocalNameSeg
+000239cc T lm_get_loopback_mode
+000239d2 T lm_get_pub_key_192
+000239f4 T lm_get_priv_key_192
+00023a0e T lm_get_oob_local_commit
+00023a2e T lm_sp_debug_mode_get
+00023a34 T lm_debug_key_compare_192
+00023a5a T lm_afh_ch_ass_en_get
+00023a60 T lm_sync_flow_ctrl_en_get
+00023a66 T lm_afh_host_ch_class_get
+00023a6c T lm_afh_peer_ch_class_set
+00023a8c T lm_afh_master_ch_map_get
+00023a92 T lm_page_scan_rep_mode_get
+00023a98 t lm_ecc_result_ind_handler
+00023ab0 t lm_afh_to_handler
+00023c3e t lm_inq_end_ind_handler
+00023c60 t lm_inq_res_ind_handler
+00023c78 T lm_link_state_print
+00023cbe t lm_page_scan_end_ind_handler
+00023e18 T lm_page_scan_stop
+00023e62 T lm_page_scan_resume
+00023ee0 t lm_page_end_ind_handler
+000240f8 T BB_inq
+0002418c T BB_inq_Cancel
+000241a4 T BB_create_con
+000242d2 T BB_Write_sp_mode
+000242dc T BB_Write_Local_Name
+0002432a T BB_wr_page_to
+00024336 T BB_Write_ScanEnable
+00024436 T BB_Write_Class_Of_Dev
+0002445a T BB_Write_Inq_Mode
+00024464 T BB_wr_ext_inq_rsp
+0002446e t ea_conflict_check
+00024524 T ea_elt_cancel
+0002462c T ea_offset_update
+0002464e T ea_init
+0002467e T ea_interval_insert
+0002469a T ea_interval_remove
+000246ac T ea_finetimer_isr
+000247ea T ea_sw_isr
+0002481c T ea_offset_req
+0002497a T ea_time_get_halfslot_rounded
+00024998 T ea_time_get_slot_rounded
+000249c4 t ea_prog_timer
+00024ad6 T ea_elt_insert
+00024cec T ea_elt_remove
+00024d4a T ea_timer_target_get
+00024d56 T ea_interval_duration_req
+00024de6 T ea_alarm_set
+00024e68 T ea_alarm_clear
+00024ea6 T hci_init
+00024ebc T hci_bt_acl_bdaddr_register
+00024ee2 T hci_bt_acl_conhdl_register
+00024ef2 T hci_bt_acl_bdaddr_unregister
+00024f02 T hci_tl_init
+00024f16 T Get_Dest_Id_By_add
+00024f54 T Get_Dest_Id_by_handle
+00024f86 T hci_acl_tx_data_alloc
+00024fce T hci_acl_tx_data_received
+0002501c T co_htobs
+0002501e T co_list_init
+00025026 T co_list_pool_init
+0002506a T co_list_push_front
+00025076 T co_list_extract
+000250a6 T co_list_extract_after
+000250be T co_list_insert_after
+000250ea T co_clz
+000250f6 T co_random_init
+000250fe T co_rand_byte
+00025108 T co_rand_word
+00025110 T co_min
+00025118 T co_max
+00025120 T co_abs
+00025126 T set_bt_bdaddr
+00025140 T co_write16
+00025144 T co_read16p
+0002514e T co_read32p
+00025164 T co_write32p
+00025178 T co_write16p
+00025180 T co_slot_to_duration
+0002518c T co_nb_good_channels
+000251c2 T shiftLeftOneArrayElement256
+000251ce T MultiplyByU32ModP256
+000251fa T copyBigHex256
+00025214 T initBigNumber256
+0002522a T setBigNumberLength256
+00025244 T AddBigHex256
+0002528a T Add2SelfBigHex256
+000252ca T SubtractBigHex256
+00025320 T AddP256
+00025340 T SubtractFromSelfBigHex256
+00025388 T setVeryBigNumberLength256
+000253a2 T isGreaterThan256
+000253d6 T AddPdiv2_256
+000254c0 T isGreaterThanOrEqual256
+000254f4 T AddBigHexModP256
+00025522 T SubtractFromSelfBigHexSign256
+00025584 T SubtractBigHexMod256
+0002561a T specialModP256
+000256a0 T MultiplyBigHexByUint32_256
+000256ec T isVeryBigHexGreaterThanOrEqual256
+00025720 T MultiplyBigHexModP256
+0002581e T notEqual256
+0002583a T Is_Infinite256
+00025870 T GF_Jacobian_Point_Copy256
+00025894 T GF_Jacobian_Point_Double256
+000259e2 T GF_Jacobian_Point_Addition256
+00025c3a T GF_Affine_To_Jacobian_Point_Copy256
+00025c76 T GF_Setup_Jacobian_Infinity_Point256
+00025cb2 T divideByTwo256
+00025ce8 T bigHexInversion256
+00025dae T GF_Point_Jacobian_To_Affine256
+00025dd8 t ecc_multiplication_event_handler
+000260ce T ecc_init
+00026110 T ecc_generate_key256
+000262fe T ecc_gen_new_public_key
+0002631c T ecc_gen_new_secret_key
+000263de T ke_event_init
+000263ee T ke_event_callback_set
+00026404 T ke_event_set
+00026426 T ke_event_clear
+0002644a T ke_event_get_all
+00026450 T ke_event_schedule
+00026478 T ke_mem_init
+000264be T ke_malloc
+00026564 T ke_free
+0002661a T ke_is_free
+0002662c T ke_param2msg
+00026630 T ke_msg2param
+00026634 T ke_msg_alloc
+0002666a T ke_msg_send
+0002668a T ke_msg_send_basic
+00026698 T ke_msg_free
+000266a0 T ke_queue_push
+000266b4 T ke_queue_pop
+000266c4 T ke_queue_extract
+000266fe T ke_queue_insert
+0002672c t cmp_dest_id
+00026736 t ke_handler_search
+00026770 t ke_task_schedule
+00026822 T ke_task_init
+0002683c T ke_task_create
+00026866 T ke_state_set
+000268be T ke_state_get
+00026900 t cmp_abs_time
+0002691a t cmp_timer_id
+00026932 t ke_timer_hw_set
+00026952 t ke_time_past
+00026972 t ke_timer_schedule
+000269c0 T ke_timer_init
+000269ce T ke_timer_set
+00026a6e T ke_timer_clear
+00026abc T ke_timer_target_get
+00026acc T rf_reg_read
+00026b04 T rf_reg_write
+00026b12 T regBitsGet
+00026b3c T bcrux2FdInit
+00026c1e T rfClbrStdEnable
+00026c86 T rfClbrTxToneEn_SetNco
+00026ce6 T bcrux2WorkInit
+00026e22 T bcrux2LoInit
+00026fe2 T bcrux2SetFreqMhzBt
+000270c8 T bcrux2HostBtTxInit
+00027114 T bcrux2BtTxGainInit
+00027142 T bcrux2HostBtRxInit
+0002718e T bcrux2BtRxGainInit
+000271be T bcrux2ComInit
+0002721a T bcrux2ClbrDcocautoBegin
+00027282 T bcrux2ClbrAutoDcocBt
+0002735e T bcrux2ClbrDcocBt
+000273aa T bcrux2ReadStdVal
+00027406 T bcrux2ClbrTximbSearch
+00027582 T bcrux2ClbrTximbBt
+00027658 T bcrux2ClbrLoftBt
+000277b6 T MxdRFdigtalinoutputs
+000277e2 T MxdRfSetClbrPara
+000279b6 T MxdRfInit
+00027a9a T MxdRfSetBtMode
+00027ae4 t rf_rssi_convert
+00027ae8 t rf_reset
+00027aea t rf_txpwr_cs_get
+00027b0e t rf_txpwr_dbm_get
+00027b18 T rf_rpl_reg_rd
+00027b28 T rf_rpl_reg_wr
+00027b30 t rf_force_agc_enable
+00027b3a t txpwr_max_set
+00027b46 t rf_txpwr_inc
+00027b72 t rf_txpwr_dec
+00027b94 t rf_sleep
+00027ba4 T SetRfTxPwrMaxLevel
+00027bc0 T rf_init
+00027e34 T rwip_init
+00027e96 T rwip_schedule
+00027ea8 T rwip_sleep
+00028028 T rwip_wakeup_delay_set
+00028038 T rwip_prevent_sleep_set
+00028052 T rwip_wakeup
+00028060 T rwip_sleep_lpcycles_2_us
+0002808e T rwip_us_2_lpcycles
+0002809a T ble_sync_pulse_mode_setf
+000280b0 T ble_dpcorr_en_setf
+000280c6 T ble_forceagc_en_setf
+000280dc T ble_forcebleiq_setf
+000280f2 T ble_spifreq_setf
+00028108 T ble_spigo_setf
+0002811c T ble_xrfsel_setf
+00028138 T ble_spiptr_setf
+0002814c T ble_sync_position_setf
+00028168 T ble_forceagc_length_setf
+0002817c T ble_freqtable_ptr_setf
+00028186 T ble_rtrip_delay_setf
+000281a2 T ble_rxpwrup_setf
+000281c0 T ble_txpwrdn_setf
+000281d6 T ble_txpwrup_setf
+000281ea T ble_blepriomode_setf
+00028200 T ble_blemargin_setf
+00028214 T bt_rwbtcntl_scan_abort_setf
+00028226 T bt_rwbtcntl_pageinq_abort_setf
+00028238 T bt_rwbtcntl_rwbten_setf
+0002824a T bt_intcntl_get
+00028252 T bt_intcntl_set
+0002825a T bt_intcntl_grosstgtintmsk_getf
+00028266 T bt_intcntl_grosstgtintmsk_setf
+00028278 T bt_intcntl_finetgtintmsk_setf
+0002828a T bt_intack_clear
+00028292 T bt_intack_errorintack_clearf
+0002829e T bt_intack_audioint1ack_clearf
+000282a8 T bt_intack_audioint0ack_clearf
+000282b2 T bt_finetimecnt_get
+000282bc T bt_abtraincntl_abtpageen_setf
+000282d2 T bt_abtraincntl_abtpagestartvalue_setf
+000282e8 T bt_abtraincntl_abtpageload_setf
+000282fe T bt_abtraincntl_abtpagetime_setf
+0002831a T bt_abtraincntl_abtinqen_setf
+00028330 T bt_abtraincntl_abtinqstartvalue_setf
+00028346 T bt_abtraincntl_abtinqload_setf
+0002835c T bt_abtraincntl_abtinqtime_setf
+00028370 T bt_edrcntl_nwinsize_nwinsize_setf
+0002838c T bt_edrcntl_nwinsize_rxgrd_timeout_setf
+000283a0 T bt_et_currentrxdescptr_currentrxdescptr_setf
+000283b4 T bt_deepslcntl_get
+000283be T bt_deepslcntl_set
+000283c8 T bt_deepslcntl_extwkupdsb_setf
+000283de T bt_deepslcntl_deep_sleep_corr_en_setf
+000283f4 T bt_deepslwkup_set
+000283fe T bt_deepslstat_get
+00028408 T bt_enbpreset_pack
+0002841a T bt_finecntcorr_setf
+00028424 T bt_clkncntcorr_pack
+00028432 T bt_diagcntl_set
+0002843c T bt_errortypestat_get
+00028446 T bt_radiocntl0_sync_pulse_mode_setf
+0002845c T bt_radiocntl0_dpcorr_en_setf
+00028472 T bt_radiocntl0_forceagc_en_setf
+00028488 T bt_radiocntl0_spifreq_setf
+0002849e T bt_radiocntl0_spigo_setf
+000284b2 T bt_radiocntl1_xrfsel_setf
+000284ce T bt_radiocntl1_spiptr_setf
+000284e2 T bt_radiocntl2_sync_position_setf
+000284fe T bt_radiocntl2_forceagc_length_setf
+00028512 T bt_radiocntl3_freqtable_ptr_setf
+0002851c T bt_radiopwrupdn_rtrip_delay_getf
+0002852a T bt_radiopwrupdn_rtrip_delay_setf
+00028546 T bt_radiopwrupdn_rxpwrupct_setf
+00028564 T bt_radiopwrupdn_txpwrdnct_setf
+0002857a T bt_radiopwrupdn_txpwrupct_setf
+0002858e T bt_e0ptr_setf
+00028598 T bt_rftestcntl_sserrren_setf
+000285ae T bt_rftestcntl_herrren_setf
+000285c4 T bt_timgencntl_pack
+000285d6 T bt_grosstimtgt_grosstarget_setf
+000285e0 T bt_finetimtgt_get
+000285ea T bt_finetimtgt_finetarget_setf
+000285f4 T bt_sketclkn_getf
+000285fe T bt_pcmgencntl_set
+00028608 T bt_bredrprioscharb_pack
+00028616 T bt_bredrprioscharb_bredrpriomode_setf
+0002862c T bt_bredrprioscharb_bredrmargin_setf
+00028640 T bt_audiocntl_pack
+0002866a T bt_e_scochancntl_pack
+0002868c T bt_e_scochancntl_tog_getf
+0002869e T bt_e_scochancntl_e_scochanen_setf
+000286b8 T bt_e_scochancntl_intdelay_setf
+000286d2 T bt_e_scochancntl_te_sco_setf
+000286ea T bt_e_scomutecntl_pack
+0002870c T bt_e_scomutecntl_invl_1_getf
+00028720 T bt_e_scomutecntl_invl_0_getf
+00028734 T bt_e_scocurrenttxptr_pack
+00028748 T bt_e_scocurrenttxptr_e_scoptrtx_1_getf
+0002875a T bt_e_scocurrenttxptr_e_scoptrtx_1_setf
+00028770 T bt_e_scocurrenttxptr_e_scoptrtx_0_getf
+00028782 T bt_e_scocurrenttxptr_e_scoptrtx_0_setf
+0002879a T bt_e_scocurrentrxptr_pack
+000287ae T bt_e_scocurrentrxptr_e_scoptrrx_1_getf
+000287c0 T bt_e_scocurrentrxptr_e_scoptrrx_1_setf
+000287d6 T bt_e_scocurrentrxptr_e_scoptrrx_0_getf
+000287e8 T bt_e_scocurrentrxptr_e_scoptrrx_0_setf
+00028800 T bt_e_scoltcntl_pack
+00028822 T bt_e_scoltcntl_e_scoedrrx_setf
+0002883c T bt_e_scoltcntl_e_scoedrtx_setf
+00028856 T bt_e_scotrcntl_pack
+00028878 T btdm_mdm_trxs_t1t2_sel_set
+00028882 T btdm_mdm_t5_time_setf
+00028898 T btdm_mdm_t4_time_setf
+000288ac T btdm_mdm_trxs_t6t7_sel_set
+000288b6 T btdm_mdm_motx_ctrl_reg_pack
+000288d0 T btdm_mdm_motx_gfsk_dly_set
+000288da T btdm_mdm_agc_wait_num_setf
+000288ea T btdm_mdm_morx_agc_rssi_max_set
+000288f2 T btdm_mdm_power_ant_sub_value_setf
+00028902 T btdm_mdm_morx_acr_process_set
+0002890c T btdm_mdm_morx_time_out_th_set
+00028916 T btdm_mdm_mem_us_sel_setf
+0002892a T btdm_mdm_morx_db_rssi_agc0_set
+00028934 T btdm_mdm_morx_db_rssi_agc1_set
+0002893e T btdm_mdm_morx_db_rssi_agc2_set
+00028948 T em_bt_frcntl_format_getf
+0002895e T em_bt_frcntl_format_setf
+0002897c T em_bt_bitoff_getf
+00028990 T em_bt_clkoff0_getf
+000289a4 T em_bt_clkoff1_getf
+000289b8 T em_bt_linkcntl_pack
+000289f0 T em_bt_linkcntl_aknena_setf
+00028a10 T em_bt_linkcntl_afhena_setf
+00028a32 T em_bt_linkcntl_laap_setf
+00028a54 T em_bt_linkcntl_whdsb_setf
+00028a76 T em_bt_linkcntl_acledr_setf
+00028a98 T em_bt_linkcntl_aclltaddr_getf
+00028ab2 T em_bt_linkcntl_aclltaddr_setf
+00028ad2 T em_bt_linkcntl_linklbl_setf
+00028af0 T em_bt_bdaddr_setf
+00028b08 T em_bt_bch0_setf
+00028b1c T em_bt_bch1_setf
+00028b30 T em_bt_rxmaxbuf_bch2_pack
+00028b4a T em_bt_rxmaxbuf_bch2_rxmaxbuf_setf
+00028b68 T em_bt_pwrcntl_fh_en_setf
+00028b88 T em_bt_pwrcntl_txpwr_getf
+00028b9e T em_bt_pwrcntl_txpwr_setf
+00028bbc T em_bt_txrxcntl_pack
+00028c06 T em_bt_txrxcntl_rxthr_setf
+00028c26 T em_bt_txrxcntl_rxbcry_setf
+00028c48 T em_bt_txrxcntl_rxcrypt_setf
+00028c68 T em_bt_txrxcntl_stopmod_setf
+00028c88 T em_bt_txrxcntl_nullflt_setf
+00028ca8 T em_bt_txrxcntl_txeir_getf
+00028cc0 T em_bt_txrxcntl_txeir_setf
+00028ce0 T em_bt_txrxcntl_txbcry_setf
+00028d00 T em_bt_txrxcntl_txcrypt_setf
+00028d1e T em_bt_txdescptr_get
+00028d32 T em_bt_txdescptr_setf
+00028d46 T em_bt_chmap0_getf
+00028d5a T em_bt_chmap0_setf
+00028d6e T em_bt_chmap1_getf
+00028d82 T em_bt_chmap1_setf
+00028d96 T em_bt_chmap2_getf
+00028daa T em_bt_chmap2_setf
+00028dbe T em_bt_chmap3_getf
+00028dd2 T em_bt_chmap3_setf
+00028de6 T em_bt_chmap4_getf
+00028dfa T em_bt_chmap4_setf
+00028e0e T em_bt_nbchgood_setf
+00028e22 T em_bt_loopcntl_pack
+00028e3a T em_bt_loopcntl_to_nb_setf
+00028e58 T em_bt_loopcntl_att_nb_setf
+00028e76 T em_bt_maxfrmtime_setf
+00028e8a T em_bt_sk_setf
+00028ea2 T em_bt_iv_setf
+00028eba T em_bt_txccmpldcnt0_setf
+00028ece T em_bt_txccmpldcnt1_setf
+00028ee2 T em_bt_txccmpldcnt2_setf
+00028ef6 T em_bt_rxccmpldcnt0_setf
+00028f0a T em_bt_rxccmpldcnt1_setf
+00028f1e T em_bt_rxccmpldcnt2_setf
+00028f32 T em_bt_rxclkn0_getf
+00028f46 T em_bt_rxclkn1_getf
+00028f5a T em_bt_rxbit_rxbit_getf
+00028f72 T em_bt_rxdesccnt_audiorxdesccnt_getf
+00028f8c T em_bt_rxdesccnt_aclrxdesccnt_getf
+00028fa2 T em_bt_acltxstat_pack
+00028fec T em_bt_acltxstat_txtog_setf
+0002900c T em_bt_acltxstat_fcrc_setf
+0002902e T em_bt_acltxstat_fnak_setf
+00029050 T em_bt_acltxstat_rswitch_setf
+00029072 T em_bt_aclrxstat_rxid_getf
+0002908a T em_bt_acldmpriocntl_pack
+000290ae T em_bt_e_scodmpriocntl_pack
+000290d2 T em_bt_e_scodmpriocntl_e_scocurrentprio_setf
+000290f0 T em_bt_rxptr_pack
+00029108 T em_bt_rxstat_rxlinklbl_getf
+0002911c T em_bt_rxheader_rxtype_getf
+00029134 T em_bt_rxpheader_rxlength_getf
+0002914c T em_bt_rxchass_rxrssi_getf
+00029160 T em_bt_rxlmbufptr_setf
+00029172 T em_bt_txptr_pack
+0002918a T em_bt_txptr_nextptr_setf
+000291a6 T em_bt_txheader_pack
+000291cc T em_bt_txheader_txltaddr_setf
+000291e8 T em_bt_txpheader_pack
+0002920a T em_extab0_set
+00029216 T em_extab1_set
+00029224 t rs_update_check
+0002926e t rs_rs_check
+000292a6 t GetUserDefinedDeviceName
+000292d2 T btstack_taskinit
+000292fc T BOOT_BTStackRunInit
+00029382 T BOOT_BTStackRun
+000293ac T BTInquiry
+000293ce T BTSetAccessModeApi
+000293de T CommonAppInit
+0002940a T SetBtClassOfDevice
+00029410 T SetExtInqResponseData
+000294fe T DoLocalOperationsAfterInited
+00029586 T global_callback
+00029a04 t SppSendDataPacket
+00029a54 t AppSppCallback
+00029b88 T SppAppInit
+00029bf6 t ConnMgrStayMaster
+00029c14 t ConnMgrScoNotify
+00029cc2 t ConnMgrIsAudioUp
+00029cec t ConnMgrCountScoHandlers
+00029d1a t CmgrIdleTimerNotify
+00029d3e t ConnMgrCreateAudioLink
+00029e50 t ConnMgrScoRetryTimeout
+00029e7a t ConnMgrIsLinkUp
+00029ea2 T CMGR_Init
+00029f4c T CMGR_RegisterHandler
+00029f8e T CMGR_DeregisterHandler
+00029fbc T CMGR_CreateDataLink
+0002a0bc T CMGR_IsLinkUp
+0002a0e4 T CmgrDeregisterAudioHandler
+0002a13e T CMGR_RemoveDataLink
+0002a1aa T CMGR_IndicateLinkActivity
+0002a1d8 t ConnManager
+0002a5f8 t SppConnectionCallback
+0002a620 t SppRfCallbackFunc
+0002a700 T SPP_Init
+0002a714 T SPP_Register
+0002a7ac T SPP_Send
+0002a7c8 T SppAlloc
+0002a7e8 T SppRegisterSdpServices
+0002a84a T SppStartServiceQuery
+0002a898 t SppSdpEventHandler
+0002a900 t TWS_MasterCmgrCallback
+0002a942 T tws_cur_role_get
+0002a954 T mv_crc_iterate
+0002a97a T mv_SBC_CalculateChecksum
+0002a9a0 T tws_recv_data
+0002abf0 T tws_connect
+0002ac9e T Get_Peer_Addr
+0002acaa T tws_link_status_set
+0002acb4 T tws_connect_confirm_cmd
+0002ace0 T tws_get_adc_len
+0002acf4 T BTStackMemAlloc
+0002ad3a T BTStackFreeHeap
+0002ad3c T BtStackGetFreeHeapSize
+0002ad48 T BTStackGetHeap
+0002ad8c T U8ToBdAddr
+0002ada8 T BdAddrToU8
+0002adc4 T BtInitMemory
+0002ade4 T EVM_Init
+0002adf8 T EvmCancelTimer
+0002ae1c T EvmStartTimer
+0002ae48 T EVM_Process
+0002ae98 T OS_GetSystemTime
+0002aea0 T BEtoHost16
+0002aeaa T BEtoHost32
+0002aec2 T LEtoHost16
+0002aecc T StoreLE16
+0002aed6 T StoreLE32
+0002aeec T StoreBE16
+0002aef6 T StoreBE32
+0002af0c T _InsertTailList
+0002af1a T _InsertHeadList
+0002af28 T _RemoveHeadList
+0002af34 T RemoveEntryList
+0002af46 T IsNodeOnList
+0002af5c T L2CAP_RegisterPsm
+0002af90 T L2CAP_GetTxMtu
+0002afa6 T L2Cap_Send_sig
+0002b03e T L2Cap_Send
+0002b0d8 T L2CAP_SendData
+0002b104 T L2Cap_SendDiscReqInternal
+0002b1c6 T L2CAP_DisconnectReq
+0002b1dc T L2Cap_SendDiscRspInternal
+0002b274 T L2Cap_SendConfigReqInternal
+0002b318 T L2Cap_SendConfigRspInternal
+0002b3ae T L2Cap_SendConnRspInternal
+0002b45a T L2CAP_ConnectRsp
+0002b498 T L2Cap_SendConnReqInternal
+0002b540 T L2CAP_ConnectReq
+0002b5c6 t L2Cap_HandleRxError
+0002b624 T L2CAP_HciReceive
+0002b6ea T L2CAP_HciTxDone
+0002b7fc T L2CAP_LinkDisconnect
+0002b82e T L2Cap_SecAccessRsp
+0002b85a t SendAutoConfigReq
+0002b8d4 t SendAutoConfigRsp
+0002b942 t L2Cap_HandleConfigReq
+0002ba30 T L2Cap_StateMachine
+0002be60 T L2Cap_ProcessReq
+0002c0d8 T L2Cap_ProcessRsp
+0002c1ac t AllocChannel
+0002c22c t L2CAP_TimerFire
+0002c26c T L2CAP_Init
+0002c2f0 T L2Cap_GetValidChannel
+0002c320 T L2Cap_FindChannelByLocalIdent
+0002c352 T L2Cap_CheckForDupilicateRequest
+0002c38e T L2Cap_FindFlushable
+0002c3d8 T L2Cap_AllocLinkChannel
+0002c40a T L2Cap_AllocPsmChannel
+0002c438 T L2Cap_FreeChannel
+0002c486 T L2Cap_GetSysPkt
+0002c4c4 T L2Cap_GetMtu
+0002c4f2 T L2Cap_NotifyPsm
+0002c524 T L2Cap_NotifyUserAndCloseChannel
+0002c554 T L2Cap_ValidateCommand
+0002c680 T L2Cap_StartRtx
+0002c69e T L2Cap_StartErtx
+0002c6cc T L2Cap_StopTimer
+0002c6e0 T ME_Init
+0002c74c T MeWriteClassOfDevice
+0002c762 T MeReportResults
+0002c78c T HandleInquiryResult
+0002c814 T MeReportNMResults
+0002c836 T ReportInquiryComplete
+0002c850 T BTStatckSetPageTimeOutValue
+0002c858 T MeInitRadio
+0002c8a8 T ME_FindRemoteDeviceP
+0002c8ec T MeGetFreeRemoteDevice
+0002c950 T MeMapHciToRemoteDevice
+0002c988 T MeCallLinkHandlers
+0002c9ae T MeHandleLinkConnectReq
+0002ca4a T MeHandleReadRemFeatures
+0002ca64 T MeDisconnectLink
+0002ca86 T ReportRoleChange
+0002caca T MeHandleRoleChange
+0002caec T CallAndRemoveHandlers
+0002cb1e T MeHandleDisconnectComplete
+0002cc10 T MeReportLinkUp
+0002ccd0 T MeHandleReadRemExtFeatures
+0002ccfa T MeEnumerateRemoteDevices
+0002cd14 T MeHandleAclConComplete
+0002cdf4 T MeHandleConnectComplete
+0002ce68 T DS_EnumDeviceList
+0002cea6 T DS_FindDevice
+0002ced8 T DS_DeleteDevice
+0002cf1c T DS_AddDevice
+0002d02a T DS_EnumDevicesByQuality
+0002d114 T DS_SelectDevice
+0002d17e T DS_SelectDeviceResult
+0002d1c0 T DS_RegisterMonitorHandler
+0002d1d0 T MeDevInquiryStart
+0002d1f2 T MeDevEventHandler
+0002d38e T MeDevSdpServiceFound
+0002d436 t SecSetUserIo
+0002d4f8 T ME_RegisterGlobalHandler
+0002d50a T ME_SetInquiryMode
+0002d514 T ME_SetExtInquiryRsp
+0002d51e T ME_Inquiry
+0002d52e T ME_CancelInquiry
+0002d538 T ME_SetConnectionPacketType
+0002d546 T ME_SetAccessibleModeNC
+0002d590 T ME_SetLocalDeviceName
+0002d5a6 T ME_CreateLink
+0002d6b6 T ME_ForceDisconnectLinkWithReason
+0002d6fa T ME_CancelCreateLink
+0002d708 T ME_RegisterAcceptHandler
+0002d718 T ME_SetConnectionRole
+0002d728 T ME_AcceptIncomingLink
+0002d73a T ME_RejectIncomingLink
+0002d74c T SEC_RegisterPairingHandler
+0002d75c T SEC_RegisterAuthorizeHandler
+0002d76c T SEC_UserConfirm
+0002d79e T SEC_SetPin
+0002d7a6 T SEC_SetAuthorizeRequirements
+0002d7b6 T SEC_AccessRequest
+0002d88c T SEC_SetBondingMode
+0002d89c T SEC_SetIoCapabilities
+0002d8ac T SEC_AddDeviceRecord
+0002d8e2 T SEC_AuthorizeServiceB
+0002d94a T SEC_CancelAccessRequest
+0002d9bc T SEC_FindDeviceRecord
+0002d9c4 T SEC_EnumDeviceRecords
+0002d9cc T ME_StartSniff
+0002d9e6 T ME_StopSniff
+0002da00 T ME_SwitchRole
+0002da24 T ME_SetClassOfDevice
+0002da36 T ME_SetDefaultLinkPolicy
+0002da3e T ME_GetBtFeatures
+0002da48 T ME_CheckRadioFeature
+0002da72 T ScoHandleDisconnectComplete
+0002dae2 T ScoGetFreeConnect
+0002db0a T ScoHandleLinkConnectReq
+0002dd40 T ScoReportScoLinkUp
+0002ddaa T StartScoLinkAccept
+0002de44 T ScoHandleConnectComplete
+0002de98 T ScoHandleDisconnectAcl
+0002df28 T ScoMapHciToConnect
+0002df4a T ScoDataCallback
+0002dfb2 T SCO_SetupLink
+0002e014 T SCO_CreateLink
+0002e0c4 T SCO_UnregisterHandler
+0002e0ce T SCO_AcceptIncomingConnection
+0002e0d8 T SCO_RejectIncomingConnection
+0002e104 T SecHandleAuthenticate
+0002e110 T GetPassKey
+0002e140 T GetIoCap
+0002e192 T SecHandleUserPassKeyNotify
+0002e194 T SecHandleKeypress
+0002e1d4 T SecHandleSimplePairingComplete
+0002e1f0 T SecHandleLinkKeyNotify
+0002e248 T SecHandleIoCapRsp
+0002e2ac T SecGetPinLen
+0002e2ce T SecProcessSecurityToken
+0002e46e T SecProcessAllSecurityTokens
+0002e4d4 T SecReportAuthenticateResult
+0002e580 T SecHandleAuthenticateComplete
+0002e598 T SecReportEncryptionResult
+0002e5ca T SecHandleEncryptChange
+0002e5ec T SecBtGetFreeSecurityOp
+0002e60e t RfAdvanceToClosedTimeoutHandler
+0002e620 t RfAdvanceToOpenTimeoutHandler
+0002e6ba T RfFreeChannel
+0002e6f2 T RfAdvanceIncomingToOpenState
+0002e714 T RfSendCommandPacket
+0002e78e t RfCommandSent
+0002e7d8 t RfSendCmdRsp.constprop.6
+0002e858 T RfSendCommand
+0002e8f4 t RfSendSABM
+0002e920 T RfAdvanceNegPending
+0002e97e T RfSendAck
+0002e9f8 T RfSecCallback
+0002ea72 t RfSendDmAck.isra.3
+0002ea8a T RfDlcStateDisconnected
+0002eb3e T RfDlcStateConnPending
+0002ec88 T RfDlcStateDiscIncoming
+0002ecd0 T RfDlcStateNegPending
+0002ed36 t RfMuxStateOpen
+0002ee34 T RfDlcStateConnected
+0002eeec T RfDlcStateConnIncoming
+0002ef34 T RfDlcStateDiscPending
+0002efc6 T RfDlcStateSecPending
+0002f028 t RfMuxStateMachine
+0002f398 T RfL2Callback
+0002f4ec T RfSendDataInternal
+0002f65e T RF_Init
+0002f6e8 T RfIsChannelAllocated
+0002f718 T RfFreeUsePendingChannel
+0002f72e T RfAllocService
+0002f7de T RfFreeServerChannel
+0002f84a T RfFreeService
+0002f8b0 T RfGetFreeServiceChannel
+0002f93e t RfServiceTimeoutHandler
+0002f986 T RfAllocMux
+0002fa80 T RfFindMuxIdByRemDev
+0002fab0 T RfAllocDLC
+0002fbbe T RfFindDlcIdByDlci
+0002fbf6 T RfDisconnectDLC
+0002fc40 T RfDisconnectMux
+0002fc6a T RfCheckForCreditToSend
+0002fd9c T RfMUXCheckNextTxQueue
+0002fec2 T RfMUXCheckTxQueues
+0002ff24 T RfAppCallback
+00030064 T RfFreeDLC
+000301cc T RfFreeMux
+00030240 T RfDisconnectL2CAP
+00030264 T RfTimeoutHandler
+00030348 T RF_RegisterServerChannel
+00030364 T RF_DeregisterServerChannel
+0003036c T RF_DeregisterService
+00030374 T RF_OpenClientChannel
+00030584 T RF_RespondChannel
+000305d4 T RF_SendData
+0003061a T RF_AdvanceCredit
+0003065a T SDP_Init
+0003066c T SdpQueryTimerFire
+00030692 t SdpClientStartConnection
+000306be t StartNextQuery
+00030808 T SdpInitClient
+0003083c T SDP_Query
+00030894 T SDP_ParseAttributes
+00030dfc T SdpClientStartQuery
+00030e44 T SdpClientCallback
+00030e74 T SdpClientProcessResp
+00030efa T SdpClientL2CapCallback
+00030fa6 T SdpInitServer
+0003108e T SdpServSendError
+000310d6 T SdpFindUuidInAttrib
+0003115c T SdpFindUuidInRecord
+000311a2 T SdpServMarkMatches
+00031230 T SdpServGetNextContState
+0003124a T SdpServFindSdpRecord
+0003126a T SdpServFindMarkedAttribute
+00031292 T SdpServFindMarkedRecord
+000312b4 T SdpMarkAttribute
+0003133c T SdpServMarkAttribs
+00031442 T SdpVerifyParmLength
+00031490 T SdpStoreAttribData
+00031750 T SdpServFinishUpPacket
+000317ae T SdpServHandleServiceSearch
+00031994 T SdpServHandleAttribReq
+00031af4 T SdpServHandleServiceSearchAttribReq
+00031d50 T SdpServParseQuery
+00031dca T SdpServGetInfo
+00031e4c T SdpServL2CapCallback
+00031f30 T SdpServUpdateClassOfDevice
+00031f68 T SdpUpdateServiceDatabaseState
+00031fb2 T SDP_AddRecord
+00032026 T SdpFindRemDevWithSdpChannel
+00032058 T SdpParseElement
+000320cc t VerifyServiceSearchPattern
+0003212c t VerifyAttributeIdList
+000321d2 T SdpValidateQueryParms
+00032316 T SdpParseElementHeader
+0003232a T SdpPromoteUUIDto32
+00032348 T SdpUuidCmp
+000323f0 T SetBtPlatformInterface
+000323fa T pan_l2cap_handler
+0003244a T NapRegisterSdpServices
+0003246a T Nap_Init
+000324a2 T em_rd
+000324b0 T em_wr
+000324c2 T em_rd32p
+000324d0 T em_wr32p
+000324de T em_wr16p
+000324ec T em_rd8p
+000324f6 T mv_lmp_send
+00032564 T bt_util_buf_init
+0003264e T bt_util_buf_lmp_tx_alloc
+00032662 T bt_util_buf_lmp_tx_free
+000326a2 T bt_util_buf_acl_rx_alloc
+000326b6 T bt_util_buf_acl_rx_free
+00032732 T bt_util_buf_acl_tx_alloc
+00032746 T bt_util_buf_acl_tx_free
+0003279e T bt_util_buf_sync_init
+0003285e T bt_util_buf_sync_clear
+0003287a T bt_util_buf_sync_tx_free
+000328ca T bt_util_buf_sync_rx_alloc
+000328f6 T bt_util_buf_sync_rx_free
+00032954 t LM_ExpandAddr
+00032974 t LM_Offset
+00032a22 t LM_InitKeySchedule
+00032a4c t LM_Add
+00032a72 t LM_NextKeySchedule
+00032b00 t LM_Xor
+00032b26 t LM_XorAdd
+00032b64 t LM_ArRound
+00032c86 t LM_Ar
+00032ce2 t LM_ArPrim
+00032d5c t LM_ReverseVector
+00032da0 T E1
+00032e1e T E21
+00032e6a T E22
+00032f02 T E3
+00032f5e T KPrimC
+000335be T XorKey
+000335d0 T LM_MakeRandVec
+000335e6 t read_array_size
+00033620 T lmp_pack
+00033718 T lmp_unpack
+00033838 t lm_word_add
+00033874 t lm_n192_ucmp
+00033894 t lm_word_mul.part.1
+000338f0 t lm_word_mul_add.part.2
+00033954 t lm_convert_u8_to_arr.isra.3
+00033978 t lm_n_zero.part.4
+00033986 t lm_n_zero
+0003399c t lm_n192_rshift
+00033a02 t lm_convert_u32_to_u8.constprop.7
+00033a36 t lm_n_is_one.constprop.14
+00033a52 t lm_word_sub.part.0.constprop.17
+00033a78 t lm_n192_sqr
+00033b64 t lm_n384_192_sub.constprop.8
+00033b88 t lm_n192_usub
+00033ba8 t lm_n_copy
+00033bea t lm_n192_lshift1
+00033c22 t lm_n192_add.constprop.10
+00033c7c t lm_n192_mod_sub
+00033d08 T lm_n_is_zero
+00033d28 t lm_n_num_bits
+00033d94 t lm_n192_mod_add
+00033df2 t lm_n192_384_cmp.constprop.11
+00033e1a t lm_n192_mod_lshift_quick
+00033f06 t lm_n192_mod_lshift1_quick
+00033f3c t lm_sp_n192_n_mod
+00034062 t lm_n192_mod_sqr
+00034082 t lm_n192_mod_mul
+00034150 t lm_n192_rshift1
+000341a2 T lm_sp_sha256_calculate
+00034368 T lm_sp_n_one
+00034386 t lm_n192_mod_inverse
+0003453e T lm_sp_n192_convert_wnaf
+000345d4 T lm_sp_p192_point_jacobian_to_affine
+0003464c T lm_sp_p192_points_jacobian_to_affine
+00034790 T lm_sp_p192_dbl
+00034910 T lm_sp_p192_add
+00034bda T lm_sp_pre_compute_points
+00034c1a T lm_sp_p192_invert
+00034c52 T lm_f1
+00034db4 T lm_f2
+00034f44 T lm_g
+00034fe4 T lm_f3
+000351a0 T lm_generate_rand_16bytes
+0003520a T lm_dhkey_calc_init
+00035354 T lm_dhkey_compare
+00035430 T hashConcat
+00035462 T SHA_256
+00035844 T HMAC
+0003590e T H4
+000359b8 T H5
+00035a3a T rwbt_init
+00035a6c T rwbt_sleep_check
+00035a7a T rwbt_sleep_enter
+00035a9e T rwbt_sleep_wakeup
+00035b12 T LM_ExtractMaxEncKeySize
+00035b2a T lb_util_get_nb_broadcast
+00035b30 T lb_mst_key_cmp
+00035b38 T lb_mst_key_restart_enc
+00035bc0 T lb_mst_start_act_bcst_enc
+00035c38 T lb_mst_stop_act_bcst_enc
+00035c42 T lb_init
+00035c72 T LM_GetMasterKey
+00035c80 T LM_GetMasterKeyRand
+00035c8e T LM_GetMasterEncRand
+00035c9c T LM_GetMasterEncKeySize
+00035ca2 t lb_enc_stop_ind_handler
+00035ce6 t lb_enc_start_ind_handler
+00035d3e t lb_enc_restart_cfm_handler
+00035dd8 t lb_mst_key_cfm_handler
+00035e80 T ke_init
+00035ec0 T ke_sleep_check
+00035ecc T DDB_Open
+00035f02 T DDB_AddRecord
+00035f56 T DDB_FindRecord
+00035fb0 T DDB_EnumDeviceRecords
+00035fca T HciGetTableEntry
+00035ffa T HciDeleteConnection
+00036040 T MeChangeAccessibleMode
+00036062 t RfSendNSC
+000360d0 T RfSendParmNegotiation
+00036214 T RfSendModemStatus
+00036306 T RfSendLineStatus
+000363ee T RfSendRemotePortNeg
+00036500 T RfSendAggregateFlow
+0003657a T RfSendTest
+000365dc T RfControlChannel
+00036d04 T RfCalcFCS
+00036d26 T RfIsValidFCS
+00036d56 T bnep_lwip_netif_down
+00036d68 T __divdi3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:451
+00036da8 T __udivdi3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:818
+00036dac t fudiv_qrnnd	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:961
+00036e04 T __udivmoddi4	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:1152
+00036f5c T memcmp
+00036f94 T memcpy
+00036fc0 T memset
+00036ff0 T printf
+00036ffa T putchar
+0003702c T puts
+0003707c T srand
+00037088 T rand
+000370c2 T sprintf
+000370cc T strcpy
+000370e0 T strlen
+000370ec T strncmp
+00037104 t vprintf_help
+00037138 T vprintf
+00037184 t vsprintf_help
+00037190 T vsprintf
+000371ac T do_printf
+00037654 T _write
+0003766c T jump_to_code_addr	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:227
+000377bc T make_mva_upgrade	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../upgrade.c:30
+00037d14 T ld_acl_rx_1
+00037dea T ld_acl_tx_1
+00037f22 T BT_Interrupt
+0003837c R fhd_data	/cygdrive/I/B1X/new_8mb_code/20210901/boot/usb_sd/mva.h:15
+0003896c R header_data	/cygdrive/I/B1X/new_8mb_code/20210901/boot/usb_sd/mva.h:4
+0003906c r .LC0
+00039070 R BOOT_ReportDescriptor	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/device/otg_device_standard_request.c:48
+00039094 R BOOT_HIDConfigDescriptor	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/device/otg_device_standard_request.c:41
+000390b0 R BOOT_DeviceDescriptor	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/device/otg_device_standard_request.c:22
+00039680 r CSWTCH.210
+000396b0 R window	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:60
+00039ab0 R scale_factor_mult	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:29
+00039b64 R scale_factor_modshift	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:20
+00039be4 r alloc_table_4	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:136
+00039ca8 r alloc_table_3	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:120
+00039d18 r alloc_table_2	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:108
+00039d68 r alloc_table_1	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:74
+00039e94 r alloc_table_0	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:43
+00039fb4 R quant_bits	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:33
+00039ff8 R quant_steps	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:24
+0003a03c R sblimit_table	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:22
+0003a050 R mpa_freq_tab	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:18
+0003a058 R mpa_bitrate_tab	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:4
+0003a428 R BaudRate_tab	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/retarget.c:31
+0003a444 R tx_pin_set_tab	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/retarget.c:23
+0003a44c R tx_pin_tab	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/retarget.c:13
+0003a4dc R SDIO_DmaChannelMap	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/device_detect.c:20
+0003ac6c r .LC0
+0003ac70 R cmd_erase	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/pc_upgade.c:116
+0003ac7c R cmd_info	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/pc_upgade.c:115
+0003ac84 R cmd_const	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/pc_upgade.c:112
+0003ac90 R cmd_code	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/pc_upgade.c:111
+0003ac9c R cmd_boot	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/pc_upgade.c:110
+0003aca4 R cmd_cxxx	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/pc_upgade.c:109
+0003ad1c r ExCvt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:591
+0003ad9c r LfnOfs	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:512
+0003adac r GUID_MS_Basic	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:484
+0003adbc r cvt2.2049
+0003ae78 r cvt1.2048
+0003b06c r uc437	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ffunicode.c:15009
+0003b174 R CmdRespType
+0003b1f4 R driver_version
+0003b218 r TASK_DESC_LC
+0003b274 r .LC1
+0003b2e4 r CSWTCH.216
+0003b2e8 r CSWTCH.214
+0003b2ec R lc_default_handler
+0003b2f4 r lc_default_state
+0003b474 r lc_lmp_ext_handler_tab
+0003b52c r lc_lmp_handler_tab
+0003b6e4 r edr_packet_size
+0003b704 r br_packet_size
+0003b724 r CSWTCH.68
+0003b7a0 R ld_pcm_settings_dft
+0003b7a8 R ld_acl_edr_sizes
+0003b7b8 R ld_acl_edr_types
+0003b7c0 R ld_acl_br_sizes
+0003b7cc R ld_acl_br_types
+0003b7d4 r CSWTCH.216
+0003b7d8 r ld_sco_voice_coding
+0003b7ec r ld_sco_pkt_types
+0003b80c r ld_esco_pkt_idx
+0003b81c r ld_sco_pkt_idx
+0003b840 r ld_util_bch_ppolynom
+0003b848 r ld_util_bch_gpolynom
+0003b850 r TASK_DESC_LM
+0003b860 r lm_debug_pub_key_192
+0003b890 r lm_debug_priv_key_192
+0003b8a8 r lm_p192_base_point
+0003ba00 R lm_default_handler
+0003ba08 r lm_default_state
+0003ba38 R lm_n_page_tab
+0003ba40 R lm_local_supp_feats
+0003ba58 R one_bits
+0003ba68 R ECC_4Win_Look_up_table
+0003c224 R ecc_Jacobian_InfinityPoint256
+0003c2a8 R veryBigHexP256
+0003c2f8 R bigHexP256
+0003c324 R coef_B
+0003c350 R maxSecretKey_256
+0003c370 R BasePoint_y_256
+0003c390 R BasePoint_x_256
+0003c63c R gBtRxGainTbl
+0003c70c R gBtTxGainTbl
+0003c7bc R gFreqMhzBt
+0003ca14 r RF_RPL_TX_PW_CONV_TBL
+0003ca2c R rwip_priority
+0003caa4 r sppSdpAttributes
+0003cad4 r serialPortSdpServiceSearchReq
+0003cae8 r serialPortServiceName
+0003caf8 r serialPortProfileDescriptorList
+0003cb04 r serialPortProtocolDescriptorList
+0003cb14 r serialPortServiceClassIdList
+0003cd6c R mv_crc8_narrow
+0003cd7c R secSimplePairMode
+0003cdf8 r CSWTCH.16
+0003ce18 r NapMaxNetAccessRate
+0003ce20 r NapAccessType
+0003ce24 r NapSecurityDescriptor
+0003ce28 r NapServiceDescriptor
+0003ce34 r NapServiceName
+0003ce40 r NapLangBaseIdList
+0003ce4c r NapProfileDescList
+0003ce58 r NapBrowseGroup
+0003ce60 r NapProtoDescList
+0003ce7c r NapClassId
+0003cee0 r LM_G2Poly
+0003cfe0 r LM_G2Degree
+0003cff0 r LM_G1Poly
+0003d0f0 r LM_Permutation
+0003d100 r LM_LogTab
+0003d200 r LM_ExpTab
+0003d3a0 R lmp_ext_desc_tab
+0003d470 R lmp_desc_tab
+0003d640 r .LC0
+0003d644 r .LC1
+0003d648 r lm_sp_p192_coef_b
+0003d664 r lm_sp_p192_data
+0003d6d4 r lm_sp_p192_field
+0003d6f0 r lm_sp_sha_256hash_init
+0003d710 r lm_sp_sha256k
+0003d810 r TASK_DESC_LB
+0003d820 R lb_default_handler
+0003d828 r lb_default_state
+0003d848 R ZeroVersionNumberList
+0003d850 R ZeroServClassIdVal
+0003d858 R BT_BASE_UUID
+0003d868 R crctable
+0003d968 A __ctxt_code_end
+0003d968 A __ctxt_code_start
+0003d968 A __ram_code_end
+0003d968 A __ram_code_start
+0003d968 A __rand_code_end
+0003d968 A __rand_code_start
+0003d980 A __data_lmastart
+0003de0c A EILM_SIZE
+20002000 D __data_start
+20002000 D bt_powerup_flag	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_manager.c:30
+20002004 D pfiBtDdb	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_platform_interface.c:64
+2000201c D pfiOS	/cygdrive/I/B1X/new_8mb_code/20210901/boot/bt/bluetooth/inc/bt_platform_interface.h:37
+2000202c D gMaxPacketSize0	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_standard_enum.c:283
+20002030 D cbw	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:54
+20002050 d xNextTaskUnblockTime	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:243
+20002054 D scale_factor_mult2	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:53
+20002078 D alloc_tables	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/mp2dectab.h:170
+2000208c D BtHoscClkDiv
+2000208e D IsApllFreeRun
+2000208f D IsDpllFreeRun
+20002090 D rc_clk_freq
+20002094 D gSOCInFreq
+20002098 D gAPLLWorkFreq
+2000209c D gPLLWorkFreq
+200020a0 D DMAEintTable
+200020c0 D DMATintTable
+200020e0 D DMADintTable
+20002100 d DMAConfigTable
+2000242c D DMAChannelAllocMap
+2000244c D OtgPortHostEnable
+2000244d D OtgPortLinkState
+20002450 D DelayMsFunc
+20002454 D sniff_clk_f
+20002458 D gSniffTimeout
+2000245c D gSniffAttempt
+20002460 D gSniffInterval
+20002464 D rs_role
+2000246c D tws_need_send_sync
+20002470 D mv_tws_link_id
+20002474 D co_default_bdaddr
+2000247c D appRfPageTxPwr
+2000247d d appRfTxPwrMax
+2000247e D bIsEnableRoleSwitch
+20002480 D _NDS32_REENT__rand_next
+20002488 D bnepContext
+2000248c D m_bnepContext
+20002a3c D NapSdpAttributes
+20002ab8 S __bss_start
+20002ab8 S _edata
+20002ab8 S app_type	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:68
+20002ab9 S DebugTwsState	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:91
+20002aba S tws_slave_cap
+20002abb S lm_nb_sync_active
+20002abc S lm_nego_max_cnt
+20002abd S lm_sync_nego
+20002abe S lm_nego_cntl
+20002abf S lm_nego_cnt
+20002ac0 S rwbt_sleep_us_comp
+20002ac2 S OtgPortLinkHoldTime
+20002ac4 S OtgPortDeviceDetectTime
+20002ac6 S lc_sco_data_path_config
+20002ac8 S lm_nego_pkt_used
+20002acc S ptrace_TASK_SWITCHED_OUT	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:85
+20002ad0 S MVA_buffer	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:51
+20002ad4 S FLASH_BOOT_SPACE_SIZE	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:460
+20002ad8 S bt_ota_buff	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:52
+20002adc S usb_sd_info	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:43
+20002ae0 S bt_ota_handle	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:45
+20002ae4 S read_buffer	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:50
+20002ae8 S pvApplicationIdleHook	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:83
+20002aec S ptrace_TASK_SWITCHED_IN	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:84
+20002af0 S OtaFile	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:44
+20002af4 S USER_CODE_ADDR	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:461
+20002af8 S bt_updata_buf	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_ios_upgrade.c:14
+20002afc S psw_globle	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:262
+20002b00 S bits_buffer_ptr	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/bits.c:3
+20002b04 S bits_cache	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/bits.c:4
+20002b08 S bits_bit_count	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/bits.c:5
+20002b0c S sf	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:18
+20002b10 S pMpaDecContext	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:13
+20002b14 S sendbyte	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../startup/retarget.c:42
+20002b18 S pget_audio_type	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ffpresearch.c:57
+20002b1c S pBBErrorReport
+20002b20 S pTWS_SlaveL2capCallback
+20002b24 S ptwsRunLoop
+20002b28 S papp_bt_page_state
+20002b2c S ptws_inquiry_cmp_name
+20002b30 S pBtCancelReconnect
+20002b34 S pTWS_MasterL2capCallback
+20002b38 S pAudioDAC0DataLenGet
+20002b3c S ptws_filter_user_defined_infor_cmp
+20002b40 S pBBMatchReport
+20002b44 S ptws_connect_cmp
+20002b48 S pload_tws_filter_infor
+20002b4c S pcomfirm_connecting_condition
+20002b50 S pupdate_btDdb
+20002b54 S pget_cur_tws_addr
+20002b58 S pBtCancelConnect
+20002b5c S ptws_tx_end
+20002b60 S ptws_clk_sync
+20002b64 S ptws_audio_init
+20002b68 S pResumeAudioCore
+20002b6c S pBtStackRunNotify
+20002b70 S pBtFreqOffsetAdjustComplete
+20002b74 S pPauseAudioCore
+20002b78 S ptws_rx_end
+20002b7c S pis_tws_slave
+20002b80 S pGetBtLinkState
+20002b84 S pSendDeepSleepMsg
+20002b88 S unloaded_area
+20002b8c S rs_addr
+20002b94 S lc_sco_env
+20002b9c S lc_state
+20002ba0 S lm_sync_conf
+20002ba4 S dac_sample_count
+20002ba8 S ld_sco_env
+20002bac S ld_bcst_acl_env
+20002bb0 S ld_inq_env
+20002bb4 S ld_iscan_env
+20002bbc S ld_page_env
+20002bc0 S ld_pscan_env
+20002bc4 S lm_state
+20002bc8 S hci_tl_env
+20002bd0 S ecc_env
+20002bd8 S gpDevice
+20002bdc S rx_clk_rc_get1
+20002be0 S Crccnt_dela
+20002be4 S Rc32K_freq
+20002be8 S rx_clk_rc_get
+20002bec S g_inquiry_addr
+20002bf4 S gBtDiscDevAddr
+20002bfc S cmgrContext
+20002c00 S bt
+20002c04 S lb_state
+20002c08 B FH_Handler	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:458
+20002c0c B BT_Handler	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:457
+20002c10 B FS_Handler	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../sys_main.c:456
+20002c14 B btStackConfigParams	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bt_stack_service.c:42
+20002c18 B CmdErrCnt	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:126
+20002c1c B UDiskNotReadyErrFlag	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:51
+20002c1d B UDiskInitOK	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:48
+20002c1e B gTailLen	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:47
+20002c20 B gDataLen	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:46
+20002c22 B gHeadLen	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:45
+20002c24 B UDiskMutex	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:35
+20002c28 B SDIOSendCommandMutex	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:36
+20002c2c B SDIOMutex	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:35
+20002c30 B xBlockAllocatedBit	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:168
+20002c34 B xMinimumEverFreeBytesRemaining	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:162
+20002c38 B xFreeBytesRemaining	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:161
+20002c3c B pxEnd	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:157
+20002c40 B psw_1	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:265
+20002c44 B psw_0	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:264
+20002c48 B ulCriticalNesting	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/port.c:261
+20002c4c b ulTotalRunTime	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:258
+20002c50 b ulTaskSwitchedInTime	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:257
+20002c54 b uxSchedulerSuspended	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:253
+20002c58 b uxTaskNumber	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:242
+20002c5c b xNumOfOverflows	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:241
+20002c60 b xYieldPending	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:240
+20002c64 b uxPendedTicks	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:239
+20002c68 b xSchedulerRunning	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:238
+20002c6c b uxTopReadyPriority	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:237
+20002c70 b xTickCount	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:236
+20002c74 b uxCurrentNumberOfTasks	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:235
+20002c78 b uxTasksDeleted	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:218
+20002c7c b xTasksWaitingTermination	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:217
+20002c90 b xPendingReadyList	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:213
+20002ca4 b pxOverflowDelayedTaskList	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:212
+20002ca8 b pxDelayedTaskList	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:211
+20002cac b xDelayedTaskList2	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:210
+20002cc0 b xDelayedTaskList1	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:209
+20002cd4 b pxReadyTasksLists	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:208
+20002d9c B pxCurrentTCB	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/tasks.c:205
+20002da0 B Mp2Data	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:976
+20002da4 b current_vol.4345
+20002dac b LfnBuf	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:519
+20002fac b DirBuf	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:517
+2000320c b CurrVol	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:467
+2000320e b Fsid	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:464
+20003210 b FatFs	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../usb_sd/fs/ff.c:463
+20003218 b FlashBusyFlag
+2000321c B gSysTick
+20003220 B error
+20003224 B gSniffDelay
+20003228 B gSniffNego
+2000322c B g_lc_link_used
+20003230 B rs_state
+2000324c B rs_host_con_req_idx
+2000324d B rs_rs_fail_idx
+2000324e B rs_master_modify_bdaddr_idx
+2000324f B rs_slave_modify_bdaddr_idx
+20003250 B rs_rs_idx
+20003251 B rs_idx
+20003252 B rs_new_bdAddr
+20003253 B lc_sco_data_error_flag
+20003254 B gSynvFreqDevCompleteFlag
+20003258 B fd_idx
+20003259 B fd_role
+2000325a B gLmpCmdStart
+2000325c B remoteCompanyID
+20003260 B bt_link_id_con
+20003264 B rssi_cur
+20003268 B ld_acl_cur_type
+2000326c B rx_hec_err_cnt
+20003270 B rx_sync_err_cnt
+20003274 B tws_stream_start
+20003278 B tws_clk_sum
+2000327c B sync_state
+20003280 B bb_ld_acl_end_flag
+20003284 B deviceLen
+20003288 B deviceLocalName
+2000328c b lm_sp_p192_pub_key_gen_data
+20003290 b time_msb.8829
+20003294 B ke_state_get_soft_lock
+20003298 B agcLevel
+20003299 B agcFuncDisable
+2000329c B gPoutShiftIndex
+200032a0 B gClbrParaflag
+200032a4 B rccnt_new
+200032a8 B rccnt_pre
+200032ac B g_bt_hf_sco_callback
+200032b0 B g_bt_stack_callback
+200032b4 B btStatckState
+200032b8 B bt_stack_context
+200032bc B gBtDisconReason
+200032c0 B sCod
+200032c4 B host_access_modes_set
+200032c8 B globalHandler
+200032cc B role_switch
+200032d0 B g_bt_hfp_callback
+200032d4 B g_bt_spp_callback
+200032d8 B sppContext
+200032dc B gTwsMasterConRetry
+200032e0 B tws_pairing_radom_flag
+200032e4 B bt_tws
+200032e8 B g_bt_tws_callback
+200032ec B twsContext
+200032f0 B gBtStack_OsSys
+200032f2 B l2cap_cid
+200032f4 B l2capErrCnt
+200032f8 B platformBtDdbInterface
+200032fc B platformOsInterface
+20003300 B ts_dest_id
+20003302 B ts_idx
+20003304 b output_idx
+20003308 b output_buff
+2000330c B _NDS32_REENT__errno
+20003310 B btManager	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../bt/bluetooth/src/bt_ddb_flash.c:57
+2000348c B OtgHostInfo	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_standard_enum.c:284
+20003710 B gUDisk	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:49
+20003720 B UDiskBuf	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/otg/host/otg_host_udisk.c:50
+20003748 B SDCardId	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:73
+2000375c B SDCard	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../driver/driver_api/src/sd_card.c:72
+20003770 B xStart	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:157
+20003784 B head	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/heap_5s.c:140
+20003798 B xQueueRegistry	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../freertos/src/queue.c:187
+200037d8 B bit_alloc	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:16
+200037f8 B scale_factors	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:18
+20003858 B scale_code	/cygdrive/i/B1X/new_8mb_code/20210901/boot/Debug/../mp2_decoder/libmp2dec.c:17
+20003878 B SpiFlashInfo
+2000388c B lc_env
+20003898 B L2cap_buffer
+200038c8 B LM_SniffSubRate
+200038d4 B LM_Sniff
+200038e0 B ld_env
+20003a90 B ld_acl_env
+20003a9c B mv_acl
+20003b4c B ld_fm_env
+20003b94 B ld_sched_env
+20003ba4 B ld_sched_params
+20003bb4 B lm_env
+20003d1c B ea_env
+20003d44 B hci_env
+20003d60 B ke_event_env
+20003d84 B ke_task_env
+20003d9c B rwip_rf
+20003dd4 B rwip_heap_msg
+200041e0 B rwip_heap_non_ret
+200045ec B rwip_heap_env
+200055f8 B rwip_env
+20005608 B bt_ext_eir
+200056f8 B gBtStackHeap
+20005704 B bt_util_buf_env
+20005894 B lm_sp_sha_buffer
+20005954 B GenericHashOutput
+20005974 B lb_env
+200059e0 B ke_env
+20005a0c B _end
+20028000 W _FP_BASE_
+20028000 A _SDA_BASE_
+20048000 A _stack

@@ -1,0 +1,2 @@
+   text (code + rodata)	   data	    bss	    dec	    hex	filename
+ 811508 (545572 + 265936)	    704	  73580	 885792	  d8420	BT_Audio_APP.adx

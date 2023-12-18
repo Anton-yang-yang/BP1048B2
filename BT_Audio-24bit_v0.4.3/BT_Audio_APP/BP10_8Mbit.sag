@@ -1,0 +1,58 @@
+USER_SECTIONS .vector
+USER_SECTIONS .stub_section
+USER_SECTIONS .startup_section
+USER_SECTIONS .driver.isr
+USER_SECTIONS .tcm_section
+INCLUDE "..\middleware\flashboot\funlist.hhh"
+EILM 0x00000 0x00900000
+{
+	EXEC_CODE 0x00000
+	{
+		*flash_boot.o KEEP(+RO LMA_FORCE_ALIGN) 
+		LOADADDR NEXT __sdk_code_start
+		* KEEP(.vector LMA_FORCE_ALIGN)	
+		* KEEP(.stub_section LMA_FORCE_ALIGN)
+		*tws_time_sync.o KEEP(+RO LMA_FORCE_ALIGN)
+		*reg_access.o KEEP(+RO LMA_FORCE_ALIGN)
+		*co_utils.o KEEP(+RO LMA_FORCE_ALIGN)
+		* KEEP(.deepsleep_section LMA_FORCE_ALIGN)
+		* KEEP(.startup_section LMA_FORCE_ALIGN)
+		* KEEP(.tcm_section LMA_FORCE_ALIGN)
+		* KEEP(.driver.isr LMA_FORCE_ALIGN)
+		* (+ISR LMA_FORCE_ALIGN,+RO LMA_FORCE_ALIGN)
+	}
+
+	EXEC_RAM_CODE +0 
+	{
+		LOADADDR NEXT __ram_code_start
+		* (.ram.code LMA_FORCE_ALIGN)
+		LOADADDR      __ram_code_end
+	}
+ 
+	EXEC_RAND_CODE +0
+	{
+		LOADADDR NEXT __rand_code_start
+		* (.rand.code LMA_FORCE_ALIGN)
+		LOADADDR      __rand_code_end
+	}
+
+	EXEC_CTXT_CODE +0 
+	{
+		LOADADDR NEXT __ctxt_code_start
+		* (.ctxt.code LMA_FORCE_ALIGN)
+		LOADADDR      __ctxt_code_end
+	}
+
+;;0x20005800
+;;0x20006000
+;;0x20007000
+	EXEC_SDRAM 0x20009000
+	{
+		LOADADDR NEXT __data_lmastart
+		ADDR     NEXT __data_start
+		STACK = 0x20006000
+		VAR _SDA_BASE_ = 0x20028000
+		* (+RW LMA_FORCE_ALIGN,+ZI LMA_FORCE_ALIGN)
+	}
+}
+

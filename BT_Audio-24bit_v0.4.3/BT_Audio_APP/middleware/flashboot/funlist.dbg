@@ -1,0 +1,24 @@
+SECTIONS
+{
+	EILM_BEGIN = 0x00000000;	 
+	NDS_SAG_LMA_EILM = 0x00000000;	 
+	_ITB_BASE_ = 0x00000000;	 
+	IsFlashBusy = 0x00000dd0;	 
+	SetFlashBusy = 0x00000ddc;	 
+	ClearFlashBusy = 0x00000de4;	 
+	Fshc_WDG_Feed = 0x00000dec;	 
+	FshcClkSwitch = 0x00000e0a;	 
+	SpiFlashResumDelaySet = 0x00000e94;	 
+	SpiFlashClkSwitch = 0x00000f08;	 
+	ByteRecombineToDword = 0x00000f46;	 
+	SpiFlashRead = 0x00000f62;	 
+	SpiFlashEraseResume = 0x000010a6;	 
+	SpiFlashWrite = 0x0000113e;	 
+	SpiFlashGetStatus = 0x00001434;	 
+	SpiFlashFshcStatusSetIdle = 0x0000146a;	 
+	SpiFlashErase = 0x000014b6;	 
+	FlashErase = 0x0000165a;	 
+	SpiFlashInit = 0x00001746;	 
+	SpiFlashInfoGet = 0x0000184e;	 
+	_stack = 0x20048000;	 
+}
